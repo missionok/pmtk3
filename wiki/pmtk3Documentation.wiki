@@ -2,7 +2,8 @@
 
 = Introduction =
 
-Add your content here.
+The documentation has not yet been written.
+This is just a place holder.
 
   * GenericMatlabTools
   * Foo
