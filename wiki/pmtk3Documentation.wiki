@@ -1,16 +1,20 @@
 #summary Root page for documentation for pmtk3
 
-= Introduction =
+= Installation =
 
-The documentation has not yet been written.
-This is just a place holder.
+Download the pmtk3 and pmktData zip files. Unzip them, say to C:\pmtk3
+and C:\pmktData.
+Start Matlab/Octave. Then type
+{{{
+addpath('C:\pmtkData')
+cd C:\pmtk3
+addpath(genpathPMTK())
+}}}
+To test the system, run one of the demos, e.g.,
+{{{
+logregSATdemo
+}}}
 
-  * GenericMatlabTools
-  * Foo
+= Usage =
 
-= Details =
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+More info will be posted by late Spring 2010.
