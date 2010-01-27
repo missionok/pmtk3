@@ -1,1 +1,0 @@
-http://pmtk3.googlecode.com/svn/trunk/demos/images/gauss.png
