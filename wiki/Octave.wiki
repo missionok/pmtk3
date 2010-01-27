@@ -1,0 +1,5 @@
+#This page details Octave compatibility issues
+
+*  Lightspeed rows function aliases built in Octave rows function. Lightspeed was removed.
+*  Octave's legend function has a different interface than Matlab's. 
+*  Octave sets random seeds differently than Matlab, hence random data is not consistent. 
