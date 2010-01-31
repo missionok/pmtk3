@@ -1,0 +1,9 @@
+We explain why we chose Matlab/Octave to implement pmtk, and discuss alternatives.
+
+
+  * We chose Matlab for several reasons: it is ideally suited to mathematical code, having an almost 1:1 mapping between equations and commands; it is widely used in machine learning; and we have a large existing code base in Matlab.
+
+  * We did not choose R for several reasons: while R has many useful statistical packages, many of the more interesting ones do not provide high-level source code, making them hard to understand and/or modify. (For example, glasso is written in Fortran, and many other packages are written in C.) In addition, Matlab is about 2-5 times faster than R. And Matlab sourcecode is easier to read.
+
+  * We did not choose python simply because we had a large existing codebase in Matlab. We may port to python in the future.
+
