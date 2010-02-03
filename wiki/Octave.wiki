@@ -11,7 +11,7 @@ More general compatibility information can be found [http://www.gnu.org/software
 
 
 
-= Octave Shortcut in Matlab =
+*Octave Shortcut in Matlab*
 
 Octave can be launched within the Matlab command window, (useful for development purposes) by using the following code. Add these lines to a Matlab shortcut for single button access. 
 
@@ -24,4 +24,3 @@ system('octave --traditional --persist --silent -i -p C:\pmtkData --eval addpath
 Type {{{ exit() }}} to return to Matlab. 
 
 Code in the Matlab editor can be executed in Octave, (while its running) by highlighting it and pressing the {{{ F9 }}} key. 
-
