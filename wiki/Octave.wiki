@@ -1,5 +1,9 @@
-This page details Octave compatibility issues
+This page details Octave/Matlab compatibility issues specific to PMTK3
+
+More general compatibility information can be found [http://www.gnu.org/software/octave/FAQ.html here].
+
 
   * Lightspeed rows function aliases built in Octave rows function. Lightspeed was removed.
   * Octave's legend function has a different interface than Matlab's. 
   * Octave sets random seeds differently than Matlab, hence random data is not consistent. 
+  * Octave does not yet support Matlab's Object Oriented System and has only limited support for the old style OO system, (e.g. no operator overloading support)
