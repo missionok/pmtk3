@@ -1,4 +1,4 @@
-This page details Octave/Matlab compatibility issues specific to PMTK3
+This page details Octave/Matlab compatibility issues specific to PMTK3.
 
 More general compatibility information can be found [http://www.gnu.org/software/octave/FAQ.html here].
 
@@ -8,3 +8,20 @@ More general compatibility information can be found [http://www.gnu.org/software
   * Octave sets random seeds differently than Matlab, hence random data is not consistent. 
   * Octave does not yet support Matlab's Object Oriented System and has only limited support for the old style OO system, (e.g. no operator overloading support). This will have only very limited impact on PMTK3, which has been redesigned in a functional way. 
   * Due to the previous point, graphViz4Matlab will not currently run in Octave.
+
+
+
+= Octave Shortcut in Matlab =
+
+Octave can be launched within the Matlab command window, (useful for development purposes) by using the following code. Add these lines to a Matlab shortcut for single button access. 
+
+{{{ 
+addtosystempath('C:\Octave\3.2.3_gcc-4.4.0\bin');
+system('octave --traditional --persist --silent -i -p C:\pmtkData --eval addpath(genpath(''C:\pmtk3''))');
+
+}}}
+
+Type {{{ exit() }}} to return to Matlab. 
+
+Code in the Matlab editor can be executed in Octave, (while its running) by highlighting it and pressing the {{{ F9 }}} key. 
+
