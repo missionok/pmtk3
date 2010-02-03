@@ -6,4 +6,4 @@ More general compatibility information can be found [http://www.gnu.org/software
   * Lightspeed rows function aliases built in Octave rows function. Lightspeed was removed.
   * Octave's legend function has a different interface than Matlab's. 
   * Octave sets random seeds differently than Matlab, hence random data is not consistent. 
-  * Octave does not yet support Matlab's Object Oriented System and has only limited support for the old style OO system, (e.g. no operator overloading support)
+  * Octave does not yet support Matlab's Object Oriented System and has only limited support for the old style OO system, (e.g. no operator overloading support). This will have only very limited impact on PMTK3, which has been redesigned in a functional way. 
