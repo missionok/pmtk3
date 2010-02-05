@@ -1,0 +1,8 @@
+= SVN Development Hints & Tips = 
+
+If you use the [http://tortoisesvn.net/downloads Tortoise SVN] client for windows
+the following Matlab shortcuts might be of interest to you. 
+
+
+  * SVN Update
+    {{{system('TortoiseProc /command:update /closeonend:1 /path:"C:\pmtk3"');}}}
