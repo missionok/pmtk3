@@ -21,4 +21,4 @@
  * [http://pmtk3.googlecode.com/svn/trunk/docs/demos/probDemos/index.html probDemos]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/demos/studentTdemos/index.html studentTdemos]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/demos/svmDemos/index.html svmDemos]
- * [http://pmtk3.googlecode.com/svn/trunk/docs/demos/varSelDemos/index.html varSelDemos] 
+ * [http://pmtk3.googlecode.com/svn/trunk/docs/demos/varSelDemos/index.html varSelDemos]
