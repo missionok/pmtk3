@@ -1,2 +1,0 @@
-  * [http://foo.org test]
-  * [http://foo2.org test2]
