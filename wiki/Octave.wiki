@@ -18,7 +18,7 @@ More general compatibility information can be found [http://www.gnu.org/software
 
 
 
-*Octave Shortcut in Matlab*
+*Running Octave from within Matlab*
 
 Octave can be launched within the Matlab command window, (useful for development purposes) by using the following code. Add these lines to a Matlab shortcut for single button access. 
 
@@ -44,5 +44,3 @@ In general, the advantages of Matlab over Octave are that
 The advantage of Octave is that it is free.
 
 What we usually do is develop code locally in Matlab (using a local site license), exploiting the nice IDE and graphics. But for large compute jobs, which we run on clusters (such as Amazon's EC2), we use Octave, so we don't have to worry about licensing issues.
-
-
