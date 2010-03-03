@@ -1,9 +1,9 @@
 This page discusses issues related to Matlab vs Octave in the context of PMTK3.
 
-*Compatability*
+*Compatability of Octave and Matlab*
 
 Below we discuss some issues that have come up while developing PMTK3.
-More general compatibility information can be found [http://www.gnu.org/software/octave/FAQ.html here].
+More general compatibility information can be found [http://www.gnu.org/software/octave/FAQ.html#MATLAB-compatibility here].
 
 
   * Octave's legend function has a different interface than Matlab's. 
