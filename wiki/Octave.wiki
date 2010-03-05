@@ -16,7 +16,8 @@ More general compatibility information can be found [http://www.gnu.org/software
 
   * The Lightspeed 'rows' function aliases built in Octave 'rows' function. Lightspeed was removed from PMTK3.
 
-
+*Files Missing in Octave*
+[http://wiki.octave.org/wiki.pl?MissingMatlabFunctions Here] is a list of files in Matlab 2008a, missing in Octave. 
 
 *Running Octave from within Matlab*
 
