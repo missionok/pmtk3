@@ -18,3 +18,5 @@ logregSATdemo
 = Usage =
 
 More info will be posted by late Spring 2010.
+Meanwhile check out this auto-generated
+list of demos [http://code.google.com/p/pmtk3/wiki/Demos here].
