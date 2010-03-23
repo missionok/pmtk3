@@ -10,13 +10,15 @@ addpath('C:\pmtkData')
 cd C:\pmtk3
 addpath(genpathPMTK(pwd))
 }}}
-To test the system, run one of the demos, e.g.,
+To test the system, type
 {{{
-logregSATdemo
+runDemos
 }}}
+(If you have more patience, you can use 'runAllDemos')
 
 = Usage =
 
 More info will be posted by late Spring 2010.
+
 Meanwhile check out this auto-generated
 list of demos [http://code.google.com/p/pmtk3/wiki/Demos here].
