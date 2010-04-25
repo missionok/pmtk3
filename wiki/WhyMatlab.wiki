@@ -5,8 +5,7 @@ We explain why we chose Matlab to implement pmtk, and discuss alternatives.
 
   * In pmtk3, we deliberately avoided using the nice object oriented features of matlab so that the code will still run on octave. This has the advantage of being free. Our preferred mode of operation is to develop code locally in matlab, exploiting its excellent graphics and integrated developement environment (editor, profiler, debugger), then run large scale code on a network of computers running octave.
 
-  * We did not choose R for several reasons: while R has many useful statistical packages, many of the more interesting ones do not provide high-level source code, making them hard to understand and/or modify. (For example, Glasso is written in Fortran, and many other packages are written in C.) In addition, Matlab is about 2-5 times faster than R
-(click <a href="http://mlg.eng.cam.ac.uk/dave/rmbenchmark.php">here</a> for a comparison). And Matlab sourcecode is easier to read. For example, compare the following code fragments in Matlab and R
+  * We did not choose R for several reasons: while R has many useful statistical packages, many of the more interesting ones do not provide high-level source code, making them hard to understand and/or modify; Matlab is about 2-5 times faster than R (click <a href="http://mlg.eng.cam.ac.uk/dave/rmbenchmark.php">here</a> for a comparison); and Matlab sourcecode is easier to read. For example, compare the following code fragments in Matlab and R
 
 {{{
 A = reshape([6,2,0,2,6,0,0,0,36],3,3);
