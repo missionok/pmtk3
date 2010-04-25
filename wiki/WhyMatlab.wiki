@@ -4,5 +4,18 @@ We explain why we chose Matlab/Octave to implement pmtk, and discuss alternative
   * We chose Matlab for several reasons: it is ideally suited to mathematical code, having an almost 1:1 mapping between equations and commands; it is widely used in machine learning; and we have a large existing code base in Matlab.
 
   * We did not choose R for several reasons: while R has many useful statistical packages, many of the more interesting ones do not provide high-level source code, making them hard to understand and/or modify. (For example, Glasso is written in Fortran, and many other packages are written in C.) In addition, Matlab is about 2-5 times faster than R. And Matlab sourcecode is easier to read.
+For example, compare the following code fragments in Matlab and R
+
+{{{
+A = reshape([6,2,0,2,6,0,0,0,36],3,3);
+[V,L] = eig(A);
+AA = V*L*V';
+}}}
+
+{{{
+A = matrix(c(6,2,0,2,6,0,0,0,36), nrow=3))
+res = eigen(A, symmetric=T)
+AA = res$vec %*% diag(res$val) %*% t(res$vec)
+}}}
 
   * In the future we may port to python.
