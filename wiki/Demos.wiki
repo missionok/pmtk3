@@ -6,7 +6,6 @@
  * [http://pmtk3.googlecode.com/svn/trunk/docs/demos/Deterministic_algorithms_for_exact_inference/index.html Deterministic_algorithms_for_exact_inference]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/demos/Directed_graphical_models_Bayesian_networks/index.html Directed_graphical_models_Bayesian_networks]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/demos/Discovering_clusters/index.html Discovering_clusters]
- * [http://pmtk3.googlecode.com/svn/trunk/docs/demos/Discovering_features/index.html Discovering_features]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/demos/Discovering_network_structure/index.html Discovering_network_structure]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/demos/Discovering_relevant_variables/index.html Discovering_relevant_variables]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/demos/Fitting_probability_distributions_to_data/index.html Fitting_probability_distributions_to_data]
