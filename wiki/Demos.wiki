@@ -3,7 +3,6 @@
  * [http://pmtk3.googlecode.com/svn/trunk/docs/demos/Calculus/index.html Calculus]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/demos/Decision_theory/index.html Decision_theory]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/demos/Deterministic_algorithms_for_approximate_inference/index.html Deterministic_algorithms_for_approximate_inference]
- * [http://pmtk3.googlecode.com/svn/trunk/docs/demos/Deterministic_algorithms_for_exact_inference/index.html Deterministic_algorithms_for_exact_inference]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/demos/Directed_graphical_models_Bayesian_networks/index.html Directed_graphical_models_Bayesian_networks]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/demos/Discovering_clusters/index.html Discovering_clusters]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/demos/Discovering_network_structure/index.html Discovering_network_structure]
