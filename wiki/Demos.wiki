@@ -30,7 +30,6 @@
  * [http://pmtk3.googlecode.com/svn/trunk/docs/demos/Probability/index.html Probability]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/demos/Some_useful_probability_distributions/index.html Some_useful_probability_distributions]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/demos/Stochastic_algorithms_for_approximate_inference/index.html Stochastic_algorithms_for_approximate_inference]
-
  * [http://pmtk3.googlecode.com/svn/trunk/docs/demos/The_multivariate_Gaussian/index.html The_multivariate_Gaussian]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/demos/Trees_forests_and_boosting/index.html Trees_forests_and_boosting]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/demos/Undirected_graphical_models_Markov_and_conditional_random_fields/index.html Undirected_graphical_models_Markov_and_conditional_random_fields]
