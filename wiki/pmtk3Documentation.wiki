@@ -8,7 +8,7 @@ Start Matlab/Octave. Then type
 {{{
 addpath('C:\pmtkData')
 cd C:\pmtk3
-addpath(genpathPMTK(pwd))
+initPmtk3
 }}}
 To test the system, type
 {{{
