@@ -2,12 +2,9 @@
  * [http://pmtk3.googlecode.com/svn/trunk/docs/demoOutput/ApproxInfStochastic/index.html ApproxInfStochastic]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/demoOutput/Bayesian_models_I/index.html Bayesian_models_I]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/demoOutput/Bayesian_models_II/index.html Bayesian_models_II]
-
  * [http://pmtk3.googlecode.com/svn/trunk/docs/demoOutput/Clustering/index.html Clustering]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/demoOutput/Decision_theory/index.html Decision_theory]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/demoOutput/Directed_graphical_models/index.html Directed_graphical_models]
-
-
  * [http://pmtk3.googlecode.com/svn/trunk/docs/demoOutput/Fitting_probability_distributions_to_data/index.html Fitting_probability_distributions_to_data]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/demoOutput/Frequentist_statistics/index.html Frequentist_statistics]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/demoOutput/Gaussian_processes/index.html Gaussian_processes]
@@ -20,19 +17,14 @@
  * [http://pmtk3.googlecode.com/svn/trunk/docs/demoOutput/Linear_regression/index.html Linear_regression]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/demoOutput/Logistic_regression/index.html Logistic_regression]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/demoOutput/Markov_models/index.html Markov_models]
-
  * [http://pmtk3.googlecode.com/svn/trunk/docs/demoOutput/Mixture_models/index.html Mixture_models]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/demoOutput/Model_selection_and_regularization/index.html Model_selection_and_regularization]
-
  * [http://pmtk3.googlecode.com/svn/trunk/docs/demoOutput/Network_structure_learning/index.html Network_structure_learning]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/demoOutput/Neural_networks/index.html Neural_networks]
-
  * [http://pmtk3.googlecode.com/svn/trunk/docs/demoOutput/Optimization/index.html Optimization]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/demoOutput/Principal_components_analysis_PCA/index.html Principal_components_analysis_PCA]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/demoOutput/Probability/index.html Probability]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/demoOutput/Some_useful_probability_distributions/index.html Some_useful_probability_distributions]
-
  * [http://pmtk3.googlecode.com/svn/trunk/docs/demoOutput/The_multivariate_Gaussian/index.html The_multivariate_Gaussian]
-
  * [http://pmtk3.googlecode.com/svn/trunk/docs/demoOutput/Undirected_graphical_models/index.html Undirected_graphical_models]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/demoOutput/VariableSelection/index.html VariableSelection]
