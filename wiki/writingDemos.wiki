@@ -13,13 +13,18 @@ Every demo should have a title. This will appear in two places, the list of demo
 
 
 {{{
-%% Fit a mixture of Gaussians using variational Bayes
-% Reproduce Bishop fig 10.6
+%% Multiclass Logistic Regression 
+% In this demo, we fit a multiclass logistic regression model by first
+% performing various basis expansions of the input features. This is a
+% simplification of logregMultinomKernelMinfuncDemo.
 %%
-function mixGaussVbDemoFaithful()
+function logregMultinomKernelDemo()
+%% Setup Data
 setSeed(0);
-X = load('faithful.txt'); % 272x2
-X = standardizeCols(X);
+nClasses = 5;
+nInstances = 100;
+nVars = 2;
+[X, y] = makeData('multinomialNonlinear', nInstances, nVars, nClasses);
 .
 .
 .
@@ -33,39 +38,24 @@ is used as the section title and appears in the demos 'table' of contents.
 
 
 {{{
-%% Make data with mean 0 and unit variance
+%% Setup Data
 setSeed(0);
-N = 10; D = 1;
-data = rand(N, D);
-data = standardizeCols(data);
-m = mean(data);
-s = sum(data);
-sSq = sum(data.*data);
-xbar = m;
-sigma2Hat = sSq/N - xbar^2;
-%% The true posterior model using normal gamma prior
-% hyper parameters
-a0 = 0; b0 = 0; mu0 = 0; kappa0 = 0;
-truePost.mu = mean(data);
-truePost.kappa = N;
-truePost.alpha = N/2;
-truePost.beta = 1/2*sum((data - m).^2);
-
-%% Initialize VB to fit univariate gaussian
-% initial guess
-aN = 2.5; bN = 1;
-muN = 0.5; kappaN = 5;
-makePlot(truePost, aN, bN, muN, kappaN);
-printPmtkFigure('unigaussVbDemo1')
-
-iter = 1;
-Lq = 0; 
-maxIter = 100;
-converged = false;
-tol = 1e-5;
-Lbound(1) = Lq;
-
-%% Main loop of VB
+nClasses = 5;
+nInstances = 100;
+nVars = 2;
+[X, y] = makeData('multinomialNonlinear', nInstances, nVars, nClasses);
+%% Settings
+lambda    = 1e-2;
+polyOrder = 2;
+rbfScale  = 1;
+%% No Kernel
+modelLinear = logregFit(X, y, 'lambda', lambda);
+%% 
+fitkern = @(k,p)logregFit(X, y, 'lambda', lambda, 'kernelFn', k, 'kernelParam', p); 
+%% Polynomial
+modelPoly = fitkern(@kernelPoly, polyOrder); 
+%% RBF
+modelRBF = fitkern(@kernelRbfSigma, rbfScale); 
 .
 .
 .
