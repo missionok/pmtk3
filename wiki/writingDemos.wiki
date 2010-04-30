@@ -78,3 +78,11 @@ Lbound(1) = Lq;
 == Additional Formatting Options == 
 
 == Example == 
+
+== Preview your Demo == 
+
+Once you're finished writing your demo, preview what the published version will look like using the [http://pmtk3.googlecode.com/svn/trunk/misc/metatools/previewPublished.m previewPublish()] function.
+
+{{{
+previewPublish nameOfMyDemo
+}}}
