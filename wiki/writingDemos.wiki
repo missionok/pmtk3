@@ -1,0 +1,37 @@
+= Writing Demos =
+
+Demos in PMTK3 are automatically published to html using the [http://pmtk3.googlecode.com/svn/trunk/misc/metatools/publishDemos.m publishDemos()] function. To ensure that these demos look nice, please format the comments as follows:
+
+== Title == 
+
+Every demo should have a title. This will appear in two places, the list of demos by chapter, and at the top of the demo itself. 
+
+  * The title must be a single line, and the very first line of the file, above even the    function header. 
+  * The title line must begin with two % signs, as in {{{%% Demo Title Here}}}.
+  * Additional comments that pertain to the whole demo should immediately follow the title  without any blank lines and beginning with single % signs. 
+  * This comment block, even if empty, must end with two %% signs before the first line of Matlab code. 
+
+
+{{{
+%% Fit a mixture of Gaussians using variational Bayes
+% Reproduce Bishop fig 10.6
+%%
+function mixGaussVbDemoFaithful()
+setSeed(0);
+X = load('faithful.txt'); % 272x2
+X = standardizeCols(X);
+.
+.
+.
+}}}
+
+
+== Sections == 
+
+== Figures ==
+
+== Tags == 
+
+== Additional Formatting Options == 
+
+== Example == 
