@@ -86,3 +86,14 @@ Once you're finished writing your demo, preview what the published version will 
 {{{
 previewPublish nameOfMyDemo
 }}}
+
+
+You can create a Matlab shortcut to preview the currently open document using this code:
+
+{{{
+EDHANDLE = com.mathworks.mlservices.MLEditorServices;
+CURRENTDOC = char(EDHANDLE.builtinGetActiveDocument);
+[FPATH, DOC] = fileparts(CURRENTDOC);
+previewPublished(DOC); 
+clear EDHANDLE CURRENTDOC FPATH DOC
+}}}
