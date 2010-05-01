@@ -1,4 +1,4 @@
-= Writing Demos =
+= Writing Demos for Publishing =
 
 This page is for contributing authors. 
 
