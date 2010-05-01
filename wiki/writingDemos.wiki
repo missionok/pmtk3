@@ -198,11 +198,16 @@ previewPublish nameOfMyDemo
 You can create a Matlab shortcut to preview the currently open document using this code:
 
 {{{
+shadowFunction({'pause', 'keyboard', 'input', 'placeFigures'});
+SS = warning('query', 'all'); 
+warning('off', 'all'); 
 EDHANDLE = com.mathworks.mlservices.MLEditorServices;
 CURRENTDOC = char(EDHANDLE.builtinGetActiveDocument);
 [FPATH, DOC] = fileparts(CURRENTDOC);
 previewPublished(DOC); 
-clear EDHANDLE CURRENTDOC FPATH DOC
+warning(SS); 
+clear EDHANDLE CURRENTDOC FPATH DOC SS
+removeShadows();
 }}}
 
 
