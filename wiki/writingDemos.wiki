@@ -81,11 +81,83 @@ If you do not want the %% symbol to generate a subheading, do not include any te
 
 == Tags == 
 
-We generate a number of tables automatically using various 'tags' in 
+We generate a number of tables automatically using various 'tags'. These are comment
+strings that begin with PMTK as in {{{PMTKauthor, PMTKurl, PMTKdate PMTKslow }}}. 
+You should include these tags in the comments as in the following:
+
+{{{
+% PMTKauthor Matt Dunham
+% PMTKurl www.mywebsite.com
+% PMTKdate April 30, 2010
+}}}
+
+Include the PMTKslow tag if the demo takes more than 30 seconds to run. This just
+excludes it from the debugDemos report. If the demo takes more than 30 minutes to
+run, add the PMTKreallySlow tag, which tells publishDemos() not to actually run the
+code, publishing only the text. 
 
 == Additional Formatting Options == 
 
+There are a few other formatting options. You can include arbitrary html code, bullet lists, numbered lists, _italic_, *bold*, or {{{mono-spaced}}} text, as well as external images already saved to file. Select the cell menu --> insert text markup option. 
+
 == Example == 
+
+The published version looks like [http://pmtk3.googlecode.com/svn/trunk/docs/demoOutput/Logistic_regression/logregMultinomKernelDemo.html this].
+
+{{{
+
+%% Multiclass Logistic Regression 
+% In this demo, we fit a multiclass logistic regression model by first
+% performing various basis expansions of the input features. This is a
+% simplification of logregMultinomKernelMinfuncDemo.
+%%
+function logregMultinomKernelDemo()
+%% Setup Data
+setSeed(0);
+nClasses = 5;
+nInstances = 100;
+nVars = 2;
+[X, y] = makeData('multinomialNonlinear', nInstances, nVars, nClasses);
+%% Settings
+lambda    = 1e-2;
+polyOrder = 2;
+rbfScale  = 1;
+%% No Kernel
+modelLinear = logregFit(X, y, 'lambda', lambda);
+%% 
+fitkern = @(k,p)logregFit(X, y, 'lambda', lambda, 'kernelFn', k, 'kernelParam', p); 
+%% Polynomial
+modelPoly = fitkern(@kernelPoly, polyOrder); 
+%% RBF
+modelRBF = fitkern(@kernelRbfSigma, rbfScale); 
+%% Compute training errors
+[yhat, prob] = logregPredict(modelLinear, X); %#ok
+trainErr_linear = mean(y~=yhat);
+fprintf('Training error with raw features: %2.f%%\n', trainErr_linear*100);
+
+[yhat, prob] = logregPredict(modelPoly, X); %#ok
+trainErr_poly = mean(y~=yhat);
+fprintf('Training error using a polynomial kernal of degree %d: %2.f%%\n', polyOrder,  trainErr_poly*100);
+
+[yhat, prob] = logregPredict(modelRBF, X);
+trainErr_rbf = mean(y~=yhat);
+fprintf('Training error using an RBF kernel with scale %d: %2.f%%\n', rbfScale, trainErr_rbf*100);
+%% Plot decision boundaries
+plotDecisionBoundary(X, y, @(X)logregPredict(modelLinear, X));
+title('Linear Multinomial Logistic Regression');
+%%
+predictFcn = @(Xtest) logregPredict(modelPoly, Xtest); 
+plotDecisionBoundary(X, y, predictFcn);
+title('Kernel-Poly Multinomial Logistic Regression');
+%%
+predictFcn = @(Xtest) logregPredict(modelRBF, Xtest); 
+plotDecisionBoundary(X, y, predictFcn);
+title('Kernel-RBF Multinomial Logistic Regression');
+%%
+end
+
+}}}
+
 
 == Preview your Demo == 
 
