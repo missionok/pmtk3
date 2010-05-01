@@ -63,7 +63,25 @@ modelRBF = fitkern(@kernelRbfSigma, rbfScale);
 
 == Figures ==
 
+Publishing automatically embeds any generated figures into the html document. You can control where these are placed in two ways: using %% double percent signs or by using the {{{ snapnow }}} command. 
+
+Whenever publish encounters either of these, it immediately inserts any open figures, that have not already been inserted. The double %% signs are usually sufficient, but snapnow can be useful in loops that generate many figures. Its has no effect on the code itself.
+
+{{{
+for i=1:100
+  plot(....
+  if ismember(i, [1, 10, 20, 100])
+        snapnow;
+  end
+end
+}}}
+
+
+If you do not want the %% symbol to generate a subheading, do not include any text with it. 
+
 == Tags == 
+
+We generate a number of tables automatically using various 'tags' in 
 
 == Additional Formatting Options == 
 
