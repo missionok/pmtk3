@@ -63,19 +63,9 @@ modelRBF = fitkern(@kernelRbfSigma, rbfScale);
 
 == Figures ==
 
-Publishing automatically embeds any generated figures into the html document. You can control where these are placed in two ways: using %% double percent signs or by using the {{{ snapnow }}} command. 
+Publishing automatically embeds any generated figures into the html document. You can control where these are placed in two ways: using %% double percent signs or by using the {{{ snapnow }}} command. However, as Matlab simply executes the snapnow command when it sees %%, the latter is preferable. 
 
-Whenever publish encounters either of these, it immediately inserts any open figures, that have not already been inserted. The double %% signs are usually sufficient, but snapnow can be useful in loops that generate many figures. Its has no effect on the code itself.
-
-{{{
-for i=1:100
-  plot(....
-  if ismember(i, [1, 10, 20, 100])
-        snapnow;
-  end
-end
-}}}
-
+Whenever publish encounters either of these, it immediately inserts any open figures, that have not already been inserted. 
 
 If you do not want the %% symbol to generate a subheading, do not include any text with it. 
 
@@ -211,3 +201,23 @@ CURRENTDOC = char(EDHANDLE.builtinGetActiveDocument);
 previewPublished(DOC); 
 clear EDHANDLE CURRENTDOC FPATH DOC
 }}}
+
+
+== Things to Avoid ==
+
+A few commands can interfere with publishing. In particular the command sequence
+{{{figure(1); clf }}} can cause problems. This is because Matlab publish uses
+figure(1) itself. Its much better to create the figures and save the dynamically
+generate handle, as in 
+
+}}}
+fig1 = figure()
+fig2 = figure()
+...
+...
+...
+figure(fig1); clf
+}}}
+
+
+The use of {{{ close all }}} should also be avoided.
