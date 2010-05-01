@@ -210,7 +210,7 @@ A few commands can interfere with publishing. In particular the command sequence
 figure(1) itself. Its much better to create the figures and save the dynamically
 generate handle, as in 
 
-}}}
+{{{
 fig1 = figure()
 fig2 = figure()
 ...
