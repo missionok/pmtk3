@@ -207,8 +207,7 @@ clear EDHANDLE CURRENTDOC FPATH DOC
 
 A few commands can interfere with publishing. In particular the command sequence
 {{{figure(1); clf }}} can cause problems. This is because Matlab publish uses
-figure(1) itself. Its much better to create the figures and save the dynamically
-generate handle, as in 
+figure(1) itself. Its much better to create the figures explicitly and save the dynamically generate handles, as in 
 
 {{{
 fig1 = figure()
