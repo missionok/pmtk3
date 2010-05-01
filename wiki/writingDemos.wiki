@@ -206,6 +206,8 @@ clear EDHANDLE CURRENTDOC FPATH DOC
 }}}
 
 
+JIT acceleration is turned off during publishing, and so for loops can be considerably slower. Be prepared to wait...
+
 == Things to Avoid ==
 
 A few commands can interfere with publishing. In particular the command sequence
