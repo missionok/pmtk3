@@ -98,8 +98,42 @@ code, publishing only the text.
 
 == Additional Formatting Options == 
 
-There are a few other formatting options. You can include arbitrary html code, bullet lists, numbered lists, _italic_, *bold*, or {{{mono-spaced}}} text, as well as external images already saved to file. Select the cell menu --> insert text markup option. 
-
+There are a few other formatting options. Select the cell menu --> insert text markup
+for details:
+{{{
+%%
+% *BOLD TEXT* 
+%%
+% _ITALIC TEXT_ 
+%%
+% |MONOSPACED TEXT| 
+%%
+% <html>
+% <table border=1><tr><td>one</td><td>two</td></tr></table>
+% </html>
+% 
+%%
+% 
+%  PREFORMATTED
+%  TEXT
+% 
+%%
+% 
+% <<FILENAME.PNG>>
+% 
+%%
+% <http://www.mathworks.com The MathWorks> 
+%%
+% 
+% * ITEM1
+% * ITEM2
+% 
+%%
+% 
+% # ITEM1
+% # ITEM2
+% 
+}}}
 == Example == 
 
 The published version looks like [http://pmtk3.googlecode.com/svn/trunk/docs/demoOutput/Logistic_regression/logregMultinomKernelDemo.html this].
