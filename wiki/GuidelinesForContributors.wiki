@@ -1,0 +1,10 @@
+#Best practices to follow when contributing code to pmtk.
+
+When you contribute code, please follow these guidelines
+  * Put your code in the contrib directory. If you want it incorporated into the main toolbox or demos directory, send me an email.
+
+ * Follow the general Matlab programming style guidelines [http://www.cs.ubc.ca/~murphyk/Software/matlabTutorial/html/style.html here].
+
+  * Follow the guidelines on writing demos [http://code.google.com/p/pmtk3/wiki/writingDemos here]. Then, when publishDemos() is called, it will  make nice web pages, such as those listed [http://code.google.com/p/pmtk3/wiki/Demos here], 
+
+  * Use PMTKauthor, PMTKurl, PMTKdate tags so that your code is automatically detected by makeAuthorReport, which generates [http://pmtk3.googlecode.com/svn/trunk/docs/authors.html this page]
