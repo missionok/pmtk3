@@ -1,3 +1,5 @@
   * [http://pmtk3.googlecode.com/svn/trunk/docs/authors/authorsLOC.html Contributing Authors]
-  * [http://pmtk3.googlecode.com/svn/trunk/docs/authors/packageAuthors.html Contributed Pacakges]
+
+  * [http://pmtk3.googlecode.com/svn/trunk/docs/authors/packageAuthors.html Contributed Packages]
+
   * [http://pmtk3.googlecode.com/svn/trunk/docs/authors/fileAuthors.html Contributed Files]
