@@ -1,0 +1,1 @@
+[http://pmtk3.googlecode.com/svn/trunk/docs/authors/authorsLOC.html Contributing Authors]
