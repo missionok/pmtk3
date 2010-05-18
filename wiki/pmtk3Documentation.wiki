@@ -6,9 +6,9 @@ Download the pmtk3 and pmktData zip files. Unzip them, say to C:\pmtk3
 and C:\pmktData.
 Start Matlab/Octave. Then type
 {{{
-addpath('C:\pmtkData')
 cd C:\pmtk3
 initPmtk3
+addpath(genpathPMTK('C:\pmtkData'));
 }}}
 To test the system, type
 {{{
