@@ -5,39 +5,26 @@
  * [http://pmtk3.googlecode.com/svn/trunk/docs/helpPages/ApproxInfStochastic.html ApproxInfStochastic]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/helpPages/Bayesian_models_I.html Bayesian_models_I]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/helpPages/Bayesian_models_II.html Bayesian_models_II]
-
  * [http://pmtk3.googlecode.com/svn/trunk/docs/helpPages/Clustering.html Clustering]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/helpPages/Decision_theory.html Decision_theory]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/helpPages/Directed_graphical_models.html Directed_graphical_models]
-
  * [http://pmtk3.googlecode.com/svn/trunk/docs/helpPages/ExpectationMaximization.html ExpectationMaximization]
-
- * [http://pmtk3.googlecode.com/svn/trunk/docs/helpPages/Fitting_probability_distributions_to_data.html Fitting_probability_distributions_to_data]
- * [http://pmtk3.googlecode.com/svn/trunk/docs/helpPages/Frequentist_statistics.html Frequentist_statistics]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/helpPages/GaussianModels.html GaussianModels]
- * [http://pmtk3.googlecode.com/svn/trunk/docs/helpPages/Gaussian_processes.html Gaussian_processes]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/helpPages/Generative_classifiers.html Generative_classifiers]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/helpPages/Hidden_Markov_models.html Hidden_Markov_models]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/helpPages/Information_theory.html Information_theory]
- * [http://pmtk3.googlecode.com/svn/trunk/docs/helpPages/Introduction.html Introduction]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/helpPages/KalmanFiltering.html KalmanFiltering]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/helpPages/Kernel_methods_for_supervised_learning.html Kernel_methods_for_supervised_learning]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/helpPages/Linear_algebra.html Linear_algebra]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/helpPages/Linear_regression.html Linear_regression]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/helpPages/Logistic_regression.html Logistic_regression]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/helpPages/Markov_models.html Markov_models]
-
  * [http://pmtk3.googlecode.com/svn/trunk/docs/helpPages/Mixture_models.html Mixture_models]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/helpPages/Model_selection_and_regularization.html Model_selection_and_regularization]
-
  * [http://pmtk3.googlecode.com/svn/trunk/docs/helpPages/Network_structure_learning.html Network_structure_learning]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/helpPages/Neural_networks.html Neural_networks]
-
- * [http://pmtk3.googlecode.com/svn/trunk/docs/helpPages/Optimization.html Optimization]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/helpPages/Principal_components_analysis_PCA.html Principal_components_analysis_PCA]
- * [http://pmtk3.googlecode.com/svn/trunk/docs/helpPages/Probability.html Probability]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/helpPages/Some_useful_probability_distributions.html Some_useful_probability_distributions]
-
  * [http://pmtk3.googlecode.com/svn/trunk/docs/helpPages/Undirected_graphical_models.html Undirected_graphical_models]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/helpPages/VariableSelection.html VariableSelection]
 
