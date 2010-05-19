@@ -16,6 +16,10 @@ runDemos
 }}}
 (If you have more patience, you can use 'runAllDemos')
 
+= File Descriptions = 
+
+  * A list of PMTK files with brief descriptions can be found [helpPages here.]
+
 = Usage =
 
 More info will be posted by late Spring 2010.
