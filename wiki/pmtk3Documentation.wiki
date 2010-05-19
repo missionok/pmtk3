@@ -1,4 +1,4 @@
-#summary Root page for documentation for pmtk3
+#summary Root documentation page for pmtk3
 
 = Installation =
 
