@@ -18,7 +18,7 @@ runDemos
 
 = File Descriptions = 
 
-  * A list of PMTK files with brief descriptions can be found [helpPages here.]
+  * A list of PMTK files with brief descriptions can be found [synopsisPages here.]
 
 = Usage =
 
