@@ -74,7 +74,7 @@ If you do not want the %% symbol to generate a subheading, do not include any te
 
 == Tags == 
 
-We generate a number of tables automatically using various 'tags'. These are comment
+We generate a number of [contributingAuthors tables] automatically using various 'tags'. These are comment
 strings that begin with PMTK as in {{{PMTKauthor, PMTKurl, PMTKdate PMTKslow }}}. 
 You should include these tags in the comments as in the following:
 
