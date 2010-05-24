@@ -18,7 +18,7 @@ runDemos
 
 = Functions = 
 
-  * An auto-generated list of all PMTK functions with brief (1 line) descriptions, and links to their source, can be found [synopsisPages here.]
+  * An auto-generated list of all PMTK functions, with brief (1 line) descriptions and links to their source, can be found [synopsisPages here.]
 
 = Demos =
 
