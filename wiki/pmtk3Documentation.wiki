@@ -23,3 +23,11 @@ runDemos
 = Demos =
 
    * An auto-generated list of all PMTK demos, with outputs and list to their source, can be found [http://code.google.com/p/pmtk3/wiki/Demos here].
+
+= More info = 
+ 
+  * More information on usage will be added late Summer 2010.
+
+= Matlab tutorial =
+
+  * Users are assumed to be familiar with Matlab already. If not, check out this [http://people.cs.ubc.ca/~murphyk/Software/matlabTutorial/html/index.html Matlab tutorial].
