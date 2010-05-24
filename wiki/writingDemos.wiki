@@ -89,6 +89,8 @@ excludes it from the debugDemos report. If the demo takes more than 30 minutes t
 run, add the PMTKreallySlow tag, which tells publishDemos() not to actually run the
 code, publishing only the text. 
 
+Place tags in their own comment block section, just after the title block section.
+
 == Additional Formatting Options == 
 
 There are a few other formatting options. Select the cell menu --> insert text markup
@@ -228,3 +230,6 @@ figure(fig1); clf
 
 
 The use of {{{ close all }}} should also be avoided.
+
+
+Finally, do not include %% double percent signs within loops that will be executed many times. This significantly slows down publishing, as JIT compiling is turned off. 
