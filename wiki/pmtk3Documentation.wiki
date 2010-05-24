@@ -16,13 +16,10 @@ runDemos
 }}}
 (If you have more patience, you can use 'runAllDemos')
 
-= File Descriptions = 
+= Functions = 
 
-  * A list of PMTK files with brief descriptions can be found [synopsisPages here.]
+  * An auto-generated list of all PMTK functions with brief (1 line) descriptions, and links to their source, can be found [synopsisPages here.]
 
-= Usage =
+= Demos =
 
-More info will be posted by late Spring 2010.
-
-Meanwhile check out this auto-generated
-list of demos [http://code.google.com/p/pmtk3/wiki/Demos here].
+   * An auto-generated list of all PMTK demos, with outputs and list to their source, can be found [http://code.google.com/p/pmtk3/wiki/Demos here].
