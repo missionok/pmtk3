@@ -9,4 +9,4 @@ When you contribute code, please follow these guidelines
 
   * Use PMTKauthor, PMTKurl, PMTKdate tags so that your code is automatically detected by makeAuthorReport, which generates [http://code.google.com/p/pmtk3/wiki/contributingAuthors this page]
 
-* Check the regularly updated [http://pmtk3.googlecode.com/svn/trunk/docs/debugReport.html demos] report to make sure your demos are passing. 
+  * Check the regularly updated [http://pmtk3.googlecode.com/svn/trunk/docs/debugReport.html demos] report to make sure your demos are passing. 
