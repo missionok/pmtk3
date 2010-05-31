@@ -1,4 +1,4 @@
-We explain why we chose Matlab to implement pmtk, and discuss alternatives.
+#summary We explain why we chose Matlab to implement pmtk, and discuss alternatives
 
 
   * We chose Matlab for several reasons: it is ideally suited to mathematical code, having an almost 1:1 mapping between equations and commands; it is widely used in machine learning; and we have a large existing code base in Matlab.
