@@ -16,7 +16,7 @@ More general compatibility information can be found [http://www.gnu.org/software
 
   * The Lightspeed 'rows' function aliases built in Octave 'rows' function. Lightspeed was removed from PMTK3.
 
-  * Octave does not support the concatenation of a cell array of strings and a string, you must first wrap the string in a cell. 
+  * Octave does not support the concatenation of a nested cell array of strings and a string, you must first wrap the string in a cell. 
 
 {{{
 [{'a', 'b'}, 'c'] % works in Matlab, not in Octave
