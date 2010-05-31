@@ -18,7 +18,7 @@ testPmtk3
 (If you have more patience, you can try 'runDemos')
 
 
-_PMTK3 demos automatically download required data sets as needed. This feature requires perl, which comes with all MATLAB installations and most linux distributions. If you are running Octave under windows, you may need to [http://www.perl.com/download.csp install perl], or download the data manually from [http://code.google.com/p/pmtkdata/downloads/list here]. 
+_PMTK3 demos automatically download required data sets as needed. This feature requires perl, which comes with all MATLAB installations and most linux distributions. If you are running Octave under windows, you may need to [http://www.perl.com/download.csp install perl], or download the data manually from [http://code.google.com/p/pmtkdata/downloads/list here] and add it to the pmtk3\data directory.
 = Functions = 
 
   * An auto-generated list of all PMTK functions, with brief (1 line) descriptions and links to their source, can be found [synopsisPages here.]
