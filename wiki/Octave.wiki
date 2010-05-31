@@ -16,6 +16,13 @@ More general compatibility information can be found [http://www.gnu.org/software
 
   * The Lightspeed 'rows' function aliases built in Octave 'rows' function. Lightspeed was removed from PMTK3.
 
+  * Octave does not support the concatenation of a cell array of strings and a string, you must first wrap the string in a cell. 
+
+{{{
+[{'a', 'b'}, 'c'] % works in Matlab, not in Octave
+[{'a', 'b'}, {'c'}] % works in both with the same results as above
+}}}
+
 *Files Missing in Octave*
 
 [http://wiki.octave.org/wiki.pl?MissingMatlabFunctions Here] is a list of files in Matlab 2008a, missing in Octave. 
