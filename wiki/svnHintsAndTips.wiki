@@ -1,3 +1,4 @@
+#summary Miscellaneous svn tips in the context of PMTK3
 = SVN Development Hints & Tips = 
 
 If you use the [http://tortoisesvn.net/downloads Tortoise SVN] client for windows
