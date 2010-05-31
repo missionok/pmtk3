@@ -10,3 +10,26 @@ When you contribute code, please follow these guidelines
   * Use PMTKauthor, PMTKurl, PMTKdate tags so that your code is automatically detected by makeAuthorReport, which generates [http://code.google.com/p/pmtk3/wiki/contributingAuthors this page]
 
   * Check the regularly updated [http://pmtk3.googlecode.com/svn/trunk/docs/debugReport.html demos] report to make sure your demos are passing. 
+
+== Adding data sets == 
+
+The PMTK3 [http://pmtk3.googlecode.com/svn/trunk/misc/metatools/loadData.m loadData] function, automatically downloads required data sets. To ensure that this works for new data sets, please follow these guidelines:
+
+  * Data sets are stored [http://code.google.com/p/pmtkdata/ the google code repository here]. Each data set must live in in its own folder and have exactly one .mat file. Store any processing scripts and source data in this folder as well. 
+
+  * The name of the .mat file and the folder must be the same. 
+
+  * Each data set folder must have a foo-meta.txt file, where "foo" is the name of the dataset. This file stores "meta" information used to generate [http://pmtkdata.googlecode.com/svn/trunk/dataTable.html this table].
+
+  * Each line of the foo-meta.txt file begins with a % followed by a space, and contains a PMTK tag along with its data. [http://pmtkdata.googlecode.com/svn/trunk/bishop2class/bishop2class-meta.txt Here] is an example. 
+
+  * Zip up the new folder, and add this zip file to the directory, or run the following command to do this automatically, where foo is the name of the data set.
+
+{{{
+  refreshZipFiles('foo'); 
+
+}}}
+
+  * The [ http://pmtkdata.googlecode.com/svn/trunk/refreshZipFiles.m refreshZipfiles()] function automatically excluded .svn directories. If you are zipping up a folder manually, make sure not to include the svn info, either by doing this before you check the folder in, or by running {{{ svn export }}}
+
+  * Finally check the folder in and test auto-downloding with {{{loadData('foo') }}} making sure the folder you just created is not on your MATLAB path. 
