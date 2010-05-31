@@ -6,7 +6,6 @@
 {{{
 cd C:\pmtk3
 initPmtk3
-addpath(genpathPMTK('C:\pmtkData'));
 }}}
 To test the system, type
 {{{
