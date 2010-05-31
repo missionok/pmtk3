@@ -23,7 +23,7 @@ The PMTK3 [http://pmtk3.googlecode.com/svn/trunk/misc/metatools/loadData.m loadD
 
   * Each line of the foo-meta.txt file begins with a % followed by a space, and contains a PMTK tag along with its data. [http://pmtkdata.googlecode.com/svn/trunk/bishop2class/bishop2class-meta.txt Here] is an example. 
 
-  * Zip up the new folder, and add this zip file to the directory, or run the following command to do this automatically, where foo is the name of the data set. The zip file must  have the same name as the data set as well. 
+  * Zip up the new folder, and add this zip file to the directory, or run the following command to do this automatically. The zip file must  have the same name as the data set as well. 
 
 {{{
   refreshZipFiles('foo'); 
