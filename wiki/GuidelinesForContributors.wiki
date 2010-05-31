@@ -30,6 +30,6 @@ The PMTK3 [http://pmtk3.googlecode.com/svn/trunk/misc/metatools/loadData.m loadD
 
 }}}
 
-  * The [http://pmtkdata.googlecode.com/svn/trunk/refreshZipFiles.m refreshZipfiles] function automatically excluded .svn directories. If you are zipping up a folder manually, make sure not to include the svn info, either by doing this before you check the folder in, or by running {{{ svn export }}}.
+  * The [http://pmtkdata.googlecode.com/svn/trunk/refreshZipFiles.m refreshZipfiles] function automatically excludes.svn directories. If you are zipping up a folder manually, make sure not to include the svn info, either by doing this before you check the folder in, or by running {{{ svn export }}}.
 
   * Finally check the folder in and test auto-downloding with {{{loadData('foo') }}} making sure the folder you just created is not on your MATLAB path. 
