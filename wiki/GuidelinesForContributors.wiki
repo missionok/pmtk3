@@ -13,7 +13,7 @@ When you contribute code, please follow these guidelines
 
 == Adding data sets == 
 
-The PMTK3 [http://pmtk3.googlecode.com/svn/trunk/misc/metatools/loadData.m loadData] function, automatically downloads required data sets. To ensure that this works for new data sets, please follow these guidelines:
+The PMTK3 [http://pmtk3.googlecode.com/svn/trunk/misc/metatools/loadData.m loadData] function automatically downloads required data sets. To ensure that this works for new data sets, please follow these guidelines:
 
   * Data sets are stored on the google code repository [http://code.google.com/p/pmtkdata/ here]. Each data set must live in in its own folder and have exactly one .mat file. Store any processing scripts and source data in this folder as well. 
 
