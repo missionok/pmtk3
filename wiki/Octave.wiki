@@ -23,6 +23,8 @@ More general compatibility information can be found [http://www.gnu.org/software
 [{'a', 'b'}, {'c'}] % works in both with the same results as above
 }}}
 
+  * Vertical concatenation of strings, e.g. vertcat(s{:}) behaves differently in Matlab and Octave. Matlab returns a cell array of strings, Octave returns a character array.
+
 *Files Missing in Octave*
 
 [http://wiki.octave.org/wiki.pl?MissingMatlabFunctions Here] is a list of files in Matlab 2008a, missing in Octave. 
