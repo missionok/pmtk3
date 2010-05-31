@@ -19,7 +19,7 @@ The PMTK3 [http://pmtk3.googlecode.com/svn/trunk/misc/metatools/loadData.m loadD
 
   * The name of the .mat file and the folder must be the same. 
 
-  * Each data set folder must have a foo-meta.txt file, where "foo" is the name of the data set. This file stores "meta" information used to generate [http://pmtkdata.googlecode.com/svn/trunk/dataTable.html this] table.
+  * Each data set folder must have a foo-meta.txt file, where "foo" is the name of the data set. This file stores "meta" information used to generate [http://pmtkdata.googlecode.com/svn/trunk/dataTable.html this table].
 
   * Each line of the foo-meta.txt file begins with a % followed by a space, and contains a PMTK tag along with its data. [http://pmtkdata.googlecode.com/svn/trunk/bishop2class/bishop2class-meta.txt Here] is an example. 
 
