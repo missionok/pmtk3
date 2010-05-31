@@ -1,7 +1,5 @@
+#summary this page is for contributing authors
 = Writing Demos for Publishing =
-
-This page is for contributing authors. 
-
 
 Demos in PMTK3 are automatically published to html using the [http://pmtk3.googlecode.com/svn/trunk/misc/metatools/publishDemos.m publishDemos()] function. To ensure that these demos look as you expect, please format the comments as follows:
 
