@@ -2,7 +2,7 @@
 
 = Installation =
 
-Download the latest [http://code.google.com/p/pmtk3/downloads/list pmtk3] zip file and unzip it say to C:\pmtk3. Start Matlab/Octave. Then type
+[[http://code.google.com/p/pmtk3/downloads/list Download] the latest pmtk3 zip file and unzip it say to C:\pmtk3. Start Matlab/Octave. Then type
 {{{
 cd C:\pmtk3
 initPmtk3
