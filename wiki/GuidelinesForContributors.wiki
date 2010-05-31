@@ -15,15 +15,15 @@ When you contribute code, please follow these guidelines
 
 The PMTK3 [http://pmtk3.googlecode.com/svn/trunk/misc/metatools/loadData.m loadData] function, automatically downloads required data sets. To ensure that this works for new data sets, please follow these guidelines:
 
-  * Data sets are stored [http://code.google.com/p/pmtkdata/ the google code repository here]. Each data set must live in in its own folder and have exactly one .mat file. Store any processing scripts and source data in this folder as well. 
+  * Data sets are stored on the google code repository [http://code.google.com/p/pmtkdata/ here]. Each data set must live in in its own folder and have exactly one .mat file. Store any processing scripts and source data in this folder as well. 
 
   * The name of the .mat file and the folder must be the same. 
 
-  * Each data set folder must have a foo-meta.txt file, where "foo" is the name of the dataset. This file stores "meta" information used to generate [http://pmtkdata.googlecode.com/svn/trunk/dataTable.html this table].
+  * Each data set folder must have a foo-meta.txt file, where "foo" is the name of the data set. This file stores "meta" information used to generate [http://pmtkdata.googlecode.com/svn/trunk/dataTable.html this] table.
 
   * Each line of the foo-meta.txt file begins with a % followed by a space, and contains a PMTK tag along with its data. [http://pmtkdata.googlecode.com/svn/trunk/bishop2class/bishop2class-meta.txt Here] is an example. 
 
-  * Zip up the new folder, and add this zip file to the directory, or run the following command to do this automatically, where foo is the name of the data set.
+  * Zip up the new folder, and add this zip file to the directory, or run the following command to do this automatically, where foo is the name of the data set. The zip file must  have the same name as the data set as well. 
 
 {{{
   refreshZipFiles('foo'); 
