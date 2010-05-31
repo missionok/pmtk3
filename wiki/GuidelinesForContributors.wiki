@@ -1,4 +1,4 @@
-#summary Best practices to follow when contributing code to pmtk
+#summary Best practices to follow when contributing code to PMTK3
 == Adding Code == 
 When you contribute code, please follow these guidelines
   * Put your code in the contrib directory. If you want it incorporated into the main toolbox or demos directory, send me an email.
