@@ -1,4 +1,4 @@
-This page discusses issues related to Matlab vs Octave in the context of PMTK3.
+#summary issues related to Matlab vs Octave in the context of PMTK3
 
 *Compatability of Octave and Matlab*
 
