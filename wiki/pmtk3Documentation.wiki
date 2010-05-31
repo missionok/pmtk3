@@ -12,9 +12,9 @@ addpath(genpathPMTK('C:\pmtkData'));
 }}}
 To test the system, type
 {{{
-runDemos
+testPmtk3
 }}}
-(If you have more patience, you can use 'runAllDemos')
+(If you have more patience, you can try 'runDemos')
 
 = Functions = 
 
