@@ -2,7 +2,7 @@
 
 = Installation =
 
-  * [http://code.google.com/p/pmtk3/downloads/list Download] the latest pmtk3 zip file and unzip it say to C:\pmtk3. 
+  * [http://code.google.com/p/pmtk3/downloads/list Download] the latest pmtk3 zip file and unzip it say to C:\pmtk3 or ~/pmtk3. 
 
   * Install [http://code.google.com/p/graphviz4matlab/ graphViz4Matlab] used by some of the demos.
  
