@@ -1,5 +1,7 @@
 #summary Root documentation page for PMTK3
 
+(Note: a lot of the links on this page point to auto-generated content. For details on how to (re)generate this, see [http://code.google.com/p/pmtk3/wiki/updatingDocumentation here])
+
 = Installation =
 
   * [http://code.google.com/p/pmtk3/downloads/list Download] the latest pmtk3 zip file and unzip it say to "C:\pmtk3" or "~/pmtk3". 
