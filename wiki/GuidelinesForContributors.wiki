@@ -9,4 +9,6 @@ When you contribute code, please follow these guidelines
 
   * Use PMTKauthor, PMTKurl, PMTKdate tags so that your code is automatically detected by makeAuthorReport, which generates [http://code.google.com/p/pmtk3/wiki/contributingAuthors this page]
 
-  * use the debugDemos.m command, which creates a list  [http://pmtk3.googlecode.com/svn/trunk/docs/debugReport.html like this], to make sure your demos keep working. 
+  * Use the debugDemos.m command, which creates a list  [http://pmtk3.googlecode.com/svn/trunk/docs/debugReport.html like this], to make sure your demos keep working. 
+
+  * See [http://code.google.com/p/pmtkdata/wiki/GuidelinesForContributors this page] for details on adding data sets. 
