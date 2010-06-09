@@ -50,8 +50,7 @@ as ytrain, where Ntest is the number of rows in Xtest.
  For regression this is the predicted mean, for classification
 this is the predicted mode. The meaning of py depends on the model, as follows:
    
-   * For regression, py is an Ntest*1 vector of
-predicted variances.
+   * For regression, py is an Ntest*1 vector of predicted variances.
    * For binary classification, py is an Ntest*1 vector of the probability of being in class 1.
    * For multi-class, py is an Ntest*C matrix, where py(i,c) = p(y=c|Xtest(i,:),params)
 
@@ -65,5 +64,23 @@ To be written
 
 = Unsupervised learning: basics =
 
+The basic operations on an unconditional density model are
 
+{{{
+model = fooFit(X, ...) % Compute ML or MAP estimate of parameters
+l = fooLogprob(model, X) % l(i) = log p(X(i,:) | model)
+X = fooSample(model, N) % X(i,:) ~ p(. | model)
+Xhat = fooImpute(model, X)  % Xhat infers values of X which are NaN
+}}
 
+Note that not all models support the impute and logprob operations.
+
+For latent variable models, we additionally define the following
+
+{{{
+py = fooInfer(model, ...) % marginals of the posterior
+yhat = fooMap(model, ...) % MAP estimate of hidden states
+}}}
+
+The precise interface for these functions differs from model to model: 
+type 'help fooInfer' for details.
