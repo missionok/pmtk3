@@ -1,4 +1,4 @@
-installation instructions for pmtk3
+Installation instructions for pmtk3
 
 
 
@@ -9,8 +9,7 @@ installation instructions for pmtk3
 
   * If you are running Matlab 2008a or newer, you can optionally install [http://code.google.com/p/graphviz4matlab/ graphViz4Matlab]; this is used by some of the demos to visualize learned graph structures.  Assume the directory where you unzipped it is called 'C:\graphviz4matlab'
  
-  * Start Matlab/Octave. Then type the following (you will need to modify
-the directory names if you unzipped these files to a different place).
+  * Start Matlab/Octave. Then type the following (you will need to modify the directory names if you unzipped these files to a different place).
 {{{
 addpath(genpath('C:\pmtkSupport'))
 addpath(genpath('C:\graphviz4matlab'))
