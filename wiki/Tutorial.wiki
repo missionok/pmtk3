@@ -68,17 +68,21 @@ The basic operations on an unconditional density model are
 model = fooFit(X, ...) % Compute ML or MAP estimate of parameters
 l = fooLogprob(model, X) % l(i) = log p(X(i,:) | model)
 X = fooSample(model, N) % X(i,:) ~ p(. | model)
-Xhat = fooImpute(model, X)  % Xhat infers values of X which are NaN
 }}}
 
-Note that not all models support the impute and logprob operations.
+Note that not all models support the logprob operation.
 
-For latent variable models, we additionally define the following
+For joint probability models, we additionally define the following
 
 {{{
+Xhat = fooImpute(model, X)  % Xhat infers values of X which are NaN
 py = fooInfer(model, ...) % marginals of the posterior
 yhat = fooMap(model, ...) % MAP estimate of hidden states
 }}}
 
-The precise interface for these functions differs from model to model: 
-type 'help fooInfer' for details.
+The precise interface for these functions differs from model to model. We will give 
+the details later.
+
+= Graphical models =
+
+To be written
