@@ -69,7 +69,7 @@ model = fooFit(X, ...) % Compute ML or MAP estimate of parameters
 l = fooLogprob(model, X) % l(i) = log p(X(i,:) | model)
 X = fooSample(model, N) % X(i,:) ~ p(. | model)
 Xhat = fooImpute(model, X)  % Xhat infers values of X which are NaN
-}}
+}}}
 
 Note that not all models support the impute and logprob operations.
 
