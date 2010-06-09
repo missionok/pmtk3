@@ -115,16 +115,17 @@ variables and infer the values of others. We therefore  define the following add
 methods (datacase is like a single row of X, and may contain NaNs for 'unclamped' variables):
 
 
-  * Xhat = fooImpute(model, X)  % replace values of X which are NaN with predicted value
+{{{
+   Xhat = fooImpute(model, X)  % replace values of X which are NaN with predicted value
 
-  * model = fooCondition(model, datacase) % new model represents p(hidden | datacase)
+  model = fooCondition(model, datacase) % new model represents p(hidden | datacase)
       Only supported by a few models.
 
-  * X = fooSampleConditional(model, N, datacase, ...) % X(i,:) ~ p(. |  datacase)
+  X = fooSampleConditional(model, N, datacase, ...) % X(i,:) ~ p(. |  datacase)
       Conceptually the same as fooSample(fooCondition(model, datacase), N)
       The conditioned-on nodes are clamped to their observed values.
       If N=1, this is a bit like fooImpute.
-  
+ }}} 
 
 For graphical models (with no explicit latent variables),
 we define the following additional methods (we assume hidden nodes are discrete):
