@@ -1,0 +1,31 @@
+installation instructions for pmtk3
+
+
+
+  * Download the latest zip file from [http://code.google.com/p/pmtksupport/downloads/list pmtkSupport], and unzip it. Assume the directory where you unzipped it is called 'C:\pmtkSupport'
+  
+  * Download the latest zip file from [http://code.google.com/p/pmtk3/downloads/list pmtk3], and unzip it. Assume the directory where you unzipped it is called 'C:\pmtk3'
+
+
+  * If you are running Matlab 2008a or newer, you can optionally install [http://code.google.com/p/graphviz4matlab/ graphViz4Matlab]; this is used by some of the demos to visualize learned graph structures.  Assume the directory where you unzipped it is called 'C:\graphviz4matlab'
+ 
+  * Start Matlab/Octave. Then type the following (you will need to modify
+the directory names if you unzipped these files to a different place).
+{{{
+addpath(genpath('C:\pmtkSupport'))
+addpath(genpath('C:\graphviz4matlab'))
+cd C:\pmtk3
+initPmtk3
+}}}
+It is important that you run initPmtk3 last, since this adds PMTK3 to your path
+and may shadow any older functions on your path (e.g., some functions inside pmtkSupport have been replaced with newer versions).
+
+  * To test the system, type
+{{{
+testPmtk3
+}}}
+(If you have more patience, you can try 'runDemos')
+
+
+PMTK3 demos automatically download required [http://pmtkdata.googlecode.com/svn/trunk/dataTable.html data sets] as needed. This feature requires perl, which comes with all MATLAB installations and linux distributions. If you are running Octave under windows, you may need to [http://www.perl.com/download.csp install perl], or download the data manually from [http://code.google.com/p/pmtkdata/downloads/list here], and add it to the pmtk3\data directory. Alternatively, you can check out the data from the
+[http://pmtkData.googlecode.com pmtkData svn repository].
