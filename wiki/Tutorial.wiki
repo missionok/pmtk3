@@ -46,9 +46,7 @@ Once the model has been fit, you can make predictions on test data
 }}}
 
 Here yhat is an Ntest*1 vector of predicted responses of the same type
-as ytrain, where Ntest is the number of rows in Xtest. 
- For regression this is the predicted mean, for classification
-this is the predicted mode. The meaning of py depends on the model, as follows:
+as ytrain, where Ntest is the number of rows in Xtest. For regression this is the predicted mean, for classification this is the predicted mode. The meaning of py depends on the model, as follows:
    
    * For regression, py is an Ntest*1 vector of predicted variances.
    * For binary classification, py is an Ntest*1 vector of the probability of being in class 1.
