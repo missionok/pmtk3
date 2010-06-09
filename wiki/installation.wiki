@@ -1,4 +1,4 @@
-Installation instructions for pmtk3
+#summary Installation instructions for pmtk3
 
 
 
