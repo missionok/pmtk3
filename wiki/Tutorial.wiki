@@ -1,23 +1,22 @@
-Tutorial on PMTK3
+#summary Tutorial on PMTK3
 
 
 These are draft notes on how to use PMTK3.
 Last updated 9 June 2010.
 
-= Introduction =
-
 PMTK3 is a collection of functions for fitting probabilistic models to data,
 and then using these models to make inferences/ predictions about unknown
 quantities. A large variety of models, fitting and inference algorithms are 
-supported. However, we have tried to ensure that the interface is fairly
-similar for all of them. We give some of the details below.
-
-The most accurate information is auto-generated.
-See the following:
+supported. However, we have tried to hide these details behind a simple, uniform interface. More details can be found by following the links below.
 
   * An auto-generated list of all PMTK functions, with brief (1 line) descriptions and links to their source, can be found [synopsisPages here.]
 
    * An auto-generated list of all PMTK demos, with outputs and list to their source, can be found [http://code.google.com/p/pmtk3/wiki/Demos here].
+
+  * [http://code.google.com/p/pmtk3/wiki/supervised Tutorial on supervised learning] (classification and regression)
+
+  * [http://code.google.com/p/pmtk3/wiki/unsupervised Tutorial on unsupervised learning] (density estimation, graphical models, etc)
+
 
 = Supervised learning: basics =
 
