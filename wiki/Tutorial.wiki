@@ -1,4 +1,4 @@
-#tutorial Tutorial on PMTK3
+Tutorial on PMTK3
 
 
 These are draft notes on how to use PMTK3.
@@ -12,6 +12,58 @@ quantities. A large variety of models, fitting and inference algorithms are
 supported. However, we have tried to ensure that the interface is fairly
 similar for all of them. We give some of the details below.
 
+The most accurate information is auto-generated.
+See the following:
 
-= Supervised learning =
+  * An auto-generated list of all PMTK functions, with brief (1 line) descriptions and links to their source, can be found [synopsisPages here.]
+
+   * An auto-generated list of all PMTK demos, with outputs and list to their source, can be found [http://code.google.com/p/pmtk3/wiki/Demos here].
+
+= Supervised learning: basics =
+
+To fit a model of type 'foo', use
+{{{
+model = fooFit(X, y, ...)
+}}}
+where '...' refers to optional arguments,
+and 'foo' is a string such as
+  * 'linreg' (linear regression)
+  * 'logreg' (logistic regression  binary and multiclass)
+  * 'naiveBayesBer' (NB with Bernoulli features)
+  * 'naiveBayesGauss' (NB with Gaussian features)
+  * 'discrimAnalysis' (LDA or QDA)
+  * 'RDA' (regularized LDA)
+
+Here X is an N*D design matrix, where N is the number
+of training cases and D is the number of features.
+y is an N*1 response vector, which can be real-valued (regression),
+0/1 or -1/+1 (binary classification), or 1:C (multi-class).
+
+Once the model has been fit, you can make predictions on test data
+(using a plug-in estimate of the parameters) as follows
+{{{
+[yhat, py] = fooPredict(model, Xtest)
+}}}
+
+Here yhat is an Ntest*1 vector of predicted responses of the same type
+as ytrain, where Ntest is the number of rows in Xtest. 
+ For regression this is the predicted mean, for classification
+this is the predicted mode. The meaning of py depends on the model, as follows:
+   
+   * For regression, py is an Ntest*1 vector of
+predicted variances.
+   * For binary classification, py is an Ntest*1 vector of the probability of being in class 1.
+   * For multi-class, py is an Ntest*C matrix, where py(i,c) = p(y=c|Xtest(i,:),params)
+
+= Cross validation and regularization = 
+
+To be written
+
+= Kernels =
+
+To be written
+
+= Unsupervised learning: basics =
+
+
 
