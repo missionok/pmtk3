@@ -1,0 +1,42 @@
+#summary Tutorial on supervised learning using pmtk3
+
+= Basics =
+
+To fit a model of type 'foo', use
+{{{
+model = fooFit(X, y, ...)
+}}}
+where '...' refers to optional arguments,
+and 'foo' is a string such as
+  * 'linreg' (linear regression)
+  * 'logreg' (logistic regression  binary and multiclass)
+  * 'naiveBayesBer' (NB with Bernoulli features)
+  * 'naiveBayesGauss' (NB with Gaussian features)
+  * 'discrimAnalysis' (LDA or QDA)
+  * 'RDA' (regularized LDA)
+
+Here X is an N*D design matrix, where N is the number
+of training cases and D is the number of features.
+y is an N*1 response vector, which can be real-valued (regression),
+0/1 or -1/+1 (binary classification), or 1:C (multi-class).
+
+Once the model has been fit, you can make predictions on test data
+(using a plug-in estimate of the parameters) as follows
+{{{
+[yhat, py] = fooPredict(model, Xtest)
+}}}
+
+Here yhat is an Ntest*1 vector of predicted responses of the same type
+as ytrain, where Ntest is the number of rows in Xtest. For regression this is the predicted mean, for classification this is the predicted mode. The meaning of py depends on the model, as follows:
+   
+   * For regression, py is an Ntest*1 vector of predicted variances.
+   * For binary classification, py is an Ntest*1 vector of the probability of being in class 1.
+   * For multi-class, py is an Ntest*C matrix, where py(i,c) = p(y=c|Xtest(i,:),params)
+
+= Cross validation and regularization = 
+
+To be written
+
+= Kernels =
+
+To be written
