@@ -42,32 +42,62 @@ Below we consider some specific examples.
 We can fit a linear regression model, and use it to make predictions on a test set, as follows
 {{{
 [model] = linregFit(X, y);
-yhat = linregPredict(model, X)
+[yhat, v] = linregPredict(model, X)
 }}}
 
 See the following demos for examples of  this code in action:
 
  * [http://pmtk3.googlecode.com/svn/trunk/docs/demoOutput/Linear_regression/linregDemo1.html linregDemo1] Fit a linear regression model in 1d.
 
-* [http://pmtk3.googlecode.com/svn/trunk/docs/demoOutput/Linear_regression/linregPolyVsDegree.html linregPolyVsDegree] Fit a polynomial regression model in 1d.
+ * [http://pmtk3.googlecode.com/svn/trunk/docs/demoOutput/Linear_regression/linregPolyVsDegree.html linregPolyVsDegree] Fit a polynomial regression model in 1d.
 
 
-= Regularization  = 
+= Logistic regression =
 
-Using maximum likelihood to train a model often results in overfitting. So it is very common to use regularization, or MAP estimation, instead. We can use various kinds of prior. The simplest and most widely used is the spherical Gaussian prior, which corresponds to using L2 regularization. We can fit an L2-regularized linear regression model as follows (where lambda is ths strength of the regularizer, or equivalently, the precision of the Gaussian prior):
-
+We can fit a logistic regression model, and use it to make predictions on a test set, as follows
 {{{
-[model] = linregFit(X, y, 'lambda', 'regType', 'L2');
+[model] = logregFit(X, y);
+[yhat, py] = logregPredict(model, X)
 }}}
 
-This technique is known as ridge regression.
+In the binary case, y(i) can be in {-1,+1}  or {0,1} or {1,2}; the predicted value yhat will be converted to the same 'domain' as the training data. In the multiclass case, y(i) should be in {1,..,C} or {0,...,C-1}; again the output will be converted to the same form.
+The number of classes is inferred from the number of unique values in y. If the training set is very small, you should specify nclasses directly.
+
+See the following demos for examples of  this code in action:
+
+* [http://pmtk3.googlecode.com/svn/trunk/docs/demoOutput/Introduction/logregSATdemo.html logregSATdemo] Fit a binary logistic regression model to 1d data.
+
+
+= L2 regularization  = 
+
+Using maximum likelihood to train a model often results in overfitting. So it is very common to use regularization, or MAP estimation, instead. We can use various kinds of prior. The simplest and most widely used is the spherical Gaussian prior, which corresponds to using L2 regularization. We can fit an L2-regularized linear or logistic regression model as follows (where lambda is ths strength of the regularizer, or equivalently, the precision of the Gaussian prior):
+
+{{{
+[model] = linregFit(X, y, 'lambda', lambda,  'regType', 'L2');
+[model] = logregFit(X, y, 'lambda', lambda, 'regType', 'L2');
+}}}
+
+(In the linear regression context, this technique is known as ridge regression.)
 See the following demos for examples of  this code in action:
 
  * [http://pmtk3.googlecode.com/svn/trunk/docs/demoOutput/Introduction/linregPolyVsReg.html linregPolyVsReg] Show the effect of changing the regularization parameter in ridge regression.
 
 = Cross validation = 
 
-To be written
+It is very important to choose the strength of the regularizer correctly: if it is too large, the fitted function will underfit, but if it is too slow, it will overfit. A very common method for selecting such 'tuning paramaters' is cross validation (CV). In pmtk, you can specify a matrix of lambda values (one per row); the fit function will try them all and pick the one that CV estimates as the best. To save you the effort of thinking of a good set of lambda values, you can alternatively specify just the number of values to try, and the fit function will try to come up with a good range. here are some examples:
+
+{{{
+[model] = linregFit(X, y, 'lambda', [0.1;1;10], 'regType', 'L2');
+[model] = logregFit(X, y, 'nlambdas', 10, 'regType', 'L2');
+}}}
+
+You can control how many folds CV uses by passing in 'nfolds'. If you are searching over a 1d or 2d grid of values, you can set 'plotCV' to true to see a plot of the CV-estimated risk as a function of the tuning parameters. If you set 'useSErule' to true, fit will use the one-standard-error rule to choose the best lambda; in this case, fit assumes that the values of lambda are sorted such that the first row is the least complex model, and the last row is the most complex model. For fine-grained control, call the 'cvEstimate' function directly.
+
+See the following demos for examples of  this code in action:
+
+ * [http://pmtk3.googlecode.com/svn/trunk/docs/demoOutput/Decision_theory/linregCvPolyVsRegDemo linregCvPolyVsRegDemo] Compare CV estimate of future error with test error, and illustrate one standard error rule for ridge regression.
+
+
 
 = Kernels =
 
