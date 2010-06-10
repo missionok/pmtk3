@@ -64,8 +64,8 @@ In the binary case, y(i) can be in {-1,+1}  or {0,1} or {1,2}; the predicted val
 The number of classes is inferred from the number of unique values in y. If the training set is very small, you should specify nclasses directly.
 
 See the following demos for examples of  this code in action:
-
-* [http://pmtk3.googlecode.com/svn/trunk/docs/demoOutput/Introduction/logregSATdemo.html logregSATdemo] Fit a binary logistic regression model to 1d data.
+ 
+ * [http://pmtk3.googlecode.com/svn/trunk/docs/demoOutput/Introduction/logregSATdemo.html logregSATdemo] Fit a binary logistic regression model to 1d data.
 
 
 = L2 regularization  = 
@@ -74,6 +74,7 @@ Using maximum likelihood to train a model often results in overfitting. So it is
 
 {{{
 [model] = linregFit(X, y, 'lambda', lambda,  'regType', 'L2');
+[model] = linregFit(X, y, 'lambda', lambda); % L2 is default
 [model] = logregFit(X, y, 'lambda', lambda, 'regType', 'L2');
 }}}
 
@@ -95,10 +96,25 @@ You can control how many folds CV uses by passing in 'nfolds'. If you are search
 
 See the following demos for examples of  this code in action:
 
- * [http://pmtk3.googlecode.com/svn/trunk/docs/demoOutput/Decision_theory/linregCvPolyVsRegDemo linregCvPolyVsRegDemo] Compare CV estimate of future error with test error, and illustrate one standard error rule for ridge regression.
+ * [http://pmtk3.googlecode.com/svn/trunk/docs/demoOutput/Decision_theory/linregCvPolyVsRegDemo.html linregCvPolyVsRegDemo] Compare CV estimate of future error with test error, and illustrate one standard error rule for ridge regression. We already saw an example of this above where we illustrated polynomial regression.
 
 
 
-= Kernels =
+= Preprocessing and standardization =
 
-To be written
+We are free to preprocess the data in any way we choose before fitting the model. In pmtk, you can create a preprocessor (pp) 'object', and then pass it to the fitting function; the pp will  be applied to the training data before fitting the model, and will be applied again to the test data. The advantage of this approach is that the pp is stored inside the model, which makes sense, since it is part of the model definition.
+
+One very common form of preprocessing is to standardize the data. This is particularly important when using regularization methods such as L2, since the corresponding prior assumes all the parameters have comparable magnitude, which will only be true if the features have comparable magnitude. In pmtk, we can do this as follows. First create a pp object which standardizes our data, then pass it to the fitting function:
+
+{{{
+pp = preprocessorCreate('standardizeX', true);
+model = linregFit(Xtrain, ytrain, 'preproc', pp)  % applies pp to Xtrain internally
+yhat = linregPredict(Xtest) % applies pp to Xtest internally
+}}}
+
+= Kernels = 
+
+A more interesting form of preprocessing is basis function expansion. This replaces the original features with a larger set, thus permitting us to fit nonlinear models. A popular approach is to use kernel functions, and to define the new feature vector as follows: phi(x) = [K(x,mu(1)), ..., K(x,mu(D))], where the mu(j) are 'prototypes'.  and K(x,x') is a 'kernel function', which in this context just means a function of two arguments. A common example is the Gaussian or RBF kernel, K(x,x') = N(x|x', sigma2), where sigma2 is the 'bandwidth'. Often we take the prototypes to be the training vectors, but we don't have to. Below we show an example of 3 different kernels being used to fit a logistic regression model to data that is not linearly separable in the original feature space:
+
+ * [http://pmtk3.googlecode.com/svn/trunk/docs/demoOutput/Introduction/logregXorDemo.html logregXorDemo] Kernelized logistic regression applied to the binary XOR problem.
+
