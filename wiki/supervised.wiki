@@ -76,7 +76,7 @@ plotDecisionBoundary(X, y, @(X)logregPredict(model, X));
 
 This is illustrated in the following demo:
 
-* [http://pmtk3.googlecode.com/svn/trunk/docs/demoOutput/Introduction/logregXorLinearDemo.html logregXorLineardemo] Fit a  logistic regression model to 2d XOR data (not linearly separable).
+ * [http://pmtk3.googlecode.com/svn/trunk/docs/demoOutput/Introduction/logregXorLinearDemo.html logregXorLinearDemo] Fit a  logistic regression model to 2d XOR data (not linearly separable).
 
 We will discuss ways to fit nonlinear decision boundaries later.
 
@@ -109,6 +109,16 @@ We can then examine  the posterior  of the parameters using
 post = linregParamPost(model) % not yet written
 }}}
 
+When we make predictions, we integrate out the parameters rather than using a plugin approximation, using
+
+{{{
+[mu, v] = linregPredictBayes(model, X)
+}}}
+
+ This gives a more accurate reflection of our uncertainty, as is illustrated below.
+
+* [http://pmtk3.googlecode.com/svn/trunk/docs/demoOutput/Statistics/linregPostPredDemo.html linregPostPredDemo] Compare posterior predictive density to plugin approximation for linear regression model in 1d.
+
 
 = Cross validation = 
 
@@ -134,7 +144,9 @@ An alternative to cross validation, that is particularly appealing when there ar
 }}}
 
 The resulting model is automatically tuned, without needing to use cross validation!
-
+Here is a demo of this
+  
+  * Demo to be added...
 
 = Preprocessing and standardization =
 
