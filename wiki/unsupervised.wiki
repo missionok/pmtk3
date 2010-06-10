@@ -18,10 +18,7 @@ Currently, 'foo' can be one of the following (in alphabetical order)
  * hmm (hidden Markov model, any kind of observation)
  * lds (linear dynamical system)
  * markov (discrete time, discrete state Markov chain)
- * mixDiscrete (mixtures of multinomial products)
- * mixGauss (mixtures of multivariate Gaussians)
- * mixGaussDiscrete (mixtures of Gaussians and multinomials)
- * mixStudent (mixtures of multivariate Student T distributions)
+ * mix (finite mixtures models)
  * mrf2 (Markov random field with discrete nodes, pairwise potentials)
  * ppca (probabilistic principal components analysis)
 
@@ -46,6 +43,8 @@ E = fooEnergy(model, X) % E(i) = - log p(X(i,:) ) - log Z
 X = fooSample(model, N, ...) % X(i,:) ~ p(.), i=1:N
 
 }}}
+
+Note that fooFit(X,...) is shorthand for fooTrain(fooCreate(...),X,...).
 
 For some models,  fooEnergy  is the same as -fooLogprob, but for those
 with intractable normalization constants Z (e.g., MRFs), fooEnergy is more efficient to compute.
@@ -131,14 +130,12 @@ We can fit the model, consisting of K mixture components, as follows:
 }}}
 
 We can then infer the posterior responsibilities of each data point (i.e., a soft clustering) using
-{{
+{{{
 [z, pz] = mixGaussInfer(model, X)
-}}
+}}}
 
 See the following demos for examples of how to use this code in practice:
 
-  * [http://code.google.com/p/pmtk3/trunk/svn/bookDemos/Mixture_models/mixGaussDemoFaithful mixGaussDemoFaithful] Fit a mixture of Gaussians  using EM to the Old Faithful dataset.
+  * [http://code.google.com/p/pmtk3/trunk/svn/bookDemos/Mixture_models/mixGaussDemoFaithful.m mixGaussDemoFaithful] Fit a mixture of Gaussians  using EM to the Old Faithful dataset.
 
- * [http://code.google.com/p/pmtk3/trunk/svn/bookDemos/Mixture_models/mixGaussVbDemoFaithful mixGaussVbDemoFaithful] Fit a mixture of Gaussians  using variational Bayes to the Old Faithful dataset. This illustrates automatic 'killing off' of unwanted components.
-
-
+ * [http://code.google.com/p/pmtk3/trunk/svn/bookDemos/Mixture_models/mixGaussVbDemoFaithful.m mixGaussVbDemoFaithful] Fit a mixture of Gaussians  using variational Bayes to the Old Faithful dataset. This illustrates automatic 'killing off' of unwanted components.
