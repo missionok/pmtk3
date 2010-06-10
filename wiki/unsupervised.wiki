@@ -18,7 +18,7 @@ Currently, 'foo' can be one of the following (in alphabetical order)
  * hmm (hidden Markov model, any kind of observation)
  * lds (linear dynamical system)
  * markov (discrete time, discrete state Markov chain)
- * mix (finite mixtures models)
+ * mix (finite mixture models)
  * mrf2 (Markov random field with discrete nodes, pairwise potentials)
  * ppca (probabilistic principal components analysis)
 
