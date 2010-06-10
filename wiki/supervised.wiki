@@ -1,15 +1,17 @@
 #summary Tutorial on supervised learning using pmtk3
 
-= Basics =
+= Overview =
 
-To fit a model of type 'foo', use
+To create a model of type 'foo', use one of the following
 {{{
-model = fooFit(X, y, ...)
+model = fooCreate(...) % manually specified parameters
+model = fooFit(X, y, ...) % ML or MAP parameter estimation
 }}}
 where '...' refers to optional arguments,
 and 'foo' is a string such as
   * 'linreg' (linear regression)
   * 'logreg' (logistic regression  binary and multiclass)
+  * 'mlp' (multilayer perceptron, aka feedforward neural network)
   * 'naiveBayesBer' (NB with Bernoulli features)
   * 'naiveBayesGauss' (NB with Gaussian features)
   * 'discrimAnalysis' (LDA or QDA)
@@ -33,7 +35,37 @@ as ytrain, where Ntest is the number of rows in Xtest. For regression this is th
    * For binary classification, py is an Ntest*1 vector of the probability of being in class 1.
    * For multi-class, py is an Ntest*C matrix, where py(i,c) = p(y=c|Xtest(i,:),params)
 
-= Cross validation and regularization = 
+Below we consider some specific examples.
+
+= Linear regression =
+
+We can fit a linear regression model, and use it to make predictions on a test set, as follows
+{{{
+[model] = linregFit(X, y);
+yhat = linregPredict(model, X)
+}}}
+
+See the following demos for examples of  this code in action:
+
+ * [http://pmtk3.googlecode.com/svn/trunk/docs/demoOutput/Linear_regression/linregDemo1.html linregDemo1] Fit a linear regression model in 1d.
+
+* [http://pmtk3.googlecode.com/svn/trunk/docs/demoOutput/Linear_regression/linregPolyVsDegree.html linregPolyVsDegree] Fit a polynomial regression model in 1d.
+
+
+= Regularization  = 
+
+Using maximum likelihood to train a model often results in overfitting. So it is very common to use regularization, or MAP estimation, instead. We can use various kinds of prior. The simplest and most widely used is the spherical Gaussian prior, which corresponds to using L2 regularization. We can fit an L2-regularized linear regression model as follows (where lambda is ths strength of the regularizer, or equivalently, the precision of the Gaussian prior):
+
+{{{
+[model] = linregFit(X, y, 'lambda', 'regType', 'L2');
+}}}
+
+This technique is known as ridge regression.
+See the following demos for examples of  this code in action:
+
+ * [http://pmtk3.googlecode.com/svn/trunk/docs/demoOutput/Introduction/linregPolyVsReg.html linregPolyVsReg] Show the effect of changing the regularization parameter in ridge regression.
+
+= Cross validation = 
 
 To be written
 
