@@ -136,6 +136,6 @@ We can then infer the posterior responsibilities of each data point (i.e., a sof
 
 See the following demos for examples of how to use this code in practice:
 
-  * [http://code.google.com/p/pmtk3/trunk/svn/bookDemos/Mixture_models/mixGaussDemoFaithful.m mixGaussDemoFaithful] Fit a mixture of Gaussians  using EM to the Old Faithful dataset.
+  * [http://code.google.com/p/pmtk3/svn/trunk/bookDemos/Mixture_models/mixGaussDemoFaithful.m mixGaussDemoFaithful] Fit a mixture of Gaussians  using EM to the Old Faithful dataset.
 
- * [http://code.google.com/p/pmtk3/trunk/svn/bookDemos/Mixture_models/mixGaussVbDemoFaithful.m mixGaussVbDemoFaithful] Fit a mixture of Gaussians  using variational Bayes to the Old Faithful dataset. This illustrates automatic 'killing off' of unwanted components.
+ * [http://code.google.com/p/pmtk3/svn/trunk/bookDemos/Mixture_models/mixGaussVbDemoFaithful.m mixGaussVbDemoFaithful] Fit a mixture of Gaussians  using variational Bayes to the Old Faithful dataset. This illustrates automatic 'killing off' of unwanted components.
