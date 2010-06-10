@@ -1,5 +1,9 @@
 #summary Tutorial on supervised learning using pmtk3
 
+Here is a draft of the Matlab-generated version of this page:
+[http://pmtk3.googlecode.com/svn/trunk/docs/tutorial/html/tutSupervised.html]
+
+
 = Overview =
 
 To create a model of type 'foo', use one of the following
