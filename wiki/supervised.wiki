@@ -117,7 +117,7 @@ When we make predictions, we integrate out the parameters rather than using a pl
 
  This gives a more accurate reflection of our uncertainty, as is illustrated below.
 
-* [http://pmtk3.googlecode.com/svn/trunk/docs/demoOutput/Statistics/linregPostPredDemo.html linregPostPredDemo] Compare posterior predictive density to plugin approximation for linear regression model in 1d.
+ * [http://pmtk3.googlecode.com/svn/trunk/docs/demoOutput/Statistics/linregPostPredDemo.html linregPostPredDemo] Compare posterior predictive density to plugin approximation for linear regression model in 1d.
 
 
 = Cross validation = 
