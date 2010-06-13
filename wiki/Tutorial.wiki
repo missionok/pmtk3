@@ -16,6 +16,6 @@ supported. However, we have tried to hide these details behind a simple, uniform
 
    * [http://code.google.com/p/pmtk3/wiki/Demos  auto-generated list of all PMTK demos], with outputs and list to their source.
 
-  * [http://code.google.com/p/pmtk3/wiki/supervised Tutorial on supervised learning] (classification and regression)
+  * [http://pmtk3.googlecode.com/svn/trunk/docs/tutorial/html/tutSupervised.html Tutorial on supervised learning] (classification and regression)
 
   * [http://code.google.com/p/pmtk3/wiki/unsupervised Tutorial on unsupervised learning] (density estimation, graphical models, etc)
