@@ -1,11 +1,10 @@
 #summary Tutorial on PMTK3
 
 
-These are draft notes on how to use PMTK3.
-The interface is currently undergoing many changes, so these notes
-may be inconsistent with the code... stay tuned!
-
-_Last updated 9 June 2010._
+(These are draft notes on how to use PMTK3.
+*The interface is currently undergoing many changes, so
+these notes may be inconsistent with the code*
+Everything should be stable by the end of June 2010.)
 
 PMTK3 is a collection of functions for fitting probabilistic models to data,
 and then using these models to make inferences/ predictions about unknown
