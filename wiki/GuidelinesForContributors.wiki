@@ -14,3 +14,5 @@ When you contribute code, please follow these guidelines
   * Use the debugDemos.m command, which creates a list  [http://pmtk3.googlecode.com/svn/trunk/docs/debugReport.html like this], to make sure your demos keep working. 
 
   * See [http://code.google.com/p/pmtkdata/wiki/GuidelinesForContributors this page] for details on adding data sets. 
+
+  * When uploading a new [http://code.google.com/p/pmtkSupport/files pmtkSupport.zip] file   modify the link in the installPmtkSupport.m file. 
