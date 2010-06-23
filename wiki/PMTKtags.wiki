@@ -24,8 +24,8 @@
 
   * Here is a list of commonly occurring tags:
 
-    ||PMTKauthor
-    ||PMTKbroken
+    ||PMTKauthor||||
+    ||PMTKbroken||||
     ||PMTKdate||
     ||PMTKemail||
     ||PMTKinteractive||
