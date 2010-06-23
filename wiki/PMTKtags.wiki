@@ -24,20 +24,20 @@
 
   * Here is a list of commonly occurring tags:
 
-    'PMTKauthor'
-    'PMTKbroken'
-    'PMTKdate'
-    'PMTKemail'
-    'PMTKinteractive'
-    'PMTKmex'
-    'PMTKmodified'
-    'PMTKneedbiotoolbox'
-    'PMTKneedsbiotoolbox'
-    'PMTKneedsmatlab'
-    'PMTKneedsoptimtoolbox'
-    'PMTKneedsstatstoobox'
-    'PMTKneedsstatstoolbox'
-    'PMTKreallyslow'
-    'PMTKrequireoptimtoolbox'
-    'PMTKslow'
-    'PMTKurl'
+    ||PMTKauthor||
+    ||PMTKbroken||
+    ||PMTKdate||
+    ||PMTKemail||
+    ||PMTKinteractive||
+    ||PMTKmex||
+    ||PMTKmodified||
+    ||PMTKneedbiotoolbox||
+    ||PMTKneedsbiotoolbox||
+    ||PMTKneedsmatlab||
+    ||PMTKneedsoptimtoolbox||
+    ||PMTKneedsstatstoobox||
+    ||PMTKneedsstatstoolbox||
+    ||PMTKreallyslow||
+    ||PMTKrequireoptimtoolbox||
+    ||PMTKslow||
+    ||PMTKurl||
