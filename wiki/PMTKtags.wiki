@@ -2,16 +2,19 @@
 
 = Tags =
 
-Files in PMTK are annotated with tags indicating meta information such as the author, date, etc. These are comments of the following form:
+  * Files in PMTK are annotated with tags indicating meta information such as the author, date, the running time etc, and are the basis for all All [http://code.google.com/p/pmtk3/wiki/updatingDocumentation PMTK reports].
 
+  * Tags look like this, and can live anywhere in the file:
 {{{
 % PMTKauthor Matt Dunham
 % PMTKdate  July 1, 2010
 }}}
 
-and can live anywhere in the file. All tags begin with "PMTK". The remaining text after the space is the value of the tag. All [http://code.google.com/p/pmtk3/wiki/updatingDocumentation PMTK reports] depend on these tags. Tags must be preceded by the Matlab "%" comment symbol, even the file contains no Matlab code. 
+  * All tags begin with "PMTK". The remaining text after the space is the value of the tag. 
 
-There are a number of tools that can help you obtain information about tags:
+  * Tags must be preceded by the Matlab "%" comment symbol, even the file contains no Matlab code. 
+
+  * There are a number of tools that can help you obtain information about tags:
 
 || [http://pmtk3.googlecode.com/svn/trunk/toolbox/metatools/docTools/pmtkTagReport.m pmtkTagReport.m] || Generates a struct storing information on all tagged files in PMTK. ||
 || [http://pmtk3.googlecode.com/svn/trunk/toolbox/metatools/docTools/tagfinder.m tagfinder.m] || Returns a list of all tags and their values in a specified file. ||
