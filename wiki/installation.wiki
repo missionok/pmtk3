@@ -1,8 +1,7 @@
 #summary Installation instructions for pmtk3
 
   * Download the latest zip file from [http://code.google.com/p/pmtk3/downloads/list pmtk3], and unzip it. Assume the directory where you unzipped it is called 'C:\pmtk3' (Note: the zip file may not be up to date - use the [http://code.google.com/p/pmtk3/source/checkout svn interface] to get the latest version.)
-
-  * If you are running Matlab 2008a or newer, you can optionally install [http://www.graphviz.org/ graphViz]; this is used by the [http://code.google.com/p/graphviz4matlab/ graphViz4Matlab] interface to visualize learned graph structures in some of the demos. 
+ 
  
   * Start Matlab/Octave. Then type the following (you will need to modify the directory names if you unzipped these files to a different place).
 {{{
