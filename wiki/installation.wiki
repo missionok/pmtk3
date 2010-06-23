@@ -20,3 +20,6 @@ PMTK3 demos automatically download required [http://pmtkdata.googlecode.com/svn/
 [http://pmtkData.googlecode.com pmtkData svn repository].
 
 PMTK3 [http://pmtksupport.googlecode.com/svn/trunk/docs/authors/packageAuthors.html support packages] are automatically downloaded by [http://pmtk3.googlecode.com/svn/trunk/initPmtk3.m initPmtk3] if not found. This too requires perl. The packages can be manually downloaded from [http://code.google.com/p/pmtksupport/downloads/list here] if needed.
+
+
+_The [http://graphviz4matlab.googlecode.com graphViz4Matlab] package used to visualize graph structures requires a [http://www.graphviz.org/ Graphviz] installation._
