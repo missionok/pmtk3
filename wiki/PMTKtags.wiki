@@ -21,3 +21,23 @@
 || [http://pmtk3.googlecode.com/svn/trunk/toolbox/metatools/docTools/hasTag.m hasTag.m] || Returns true, if a specified file has a specified tag. ||
 || [http://pmtk3.googlecode.com/svn/trunk/toolbox/metatools/docTools/findAllFilesWithTag.m findAllFilesWithTag.m] || Returns a list of all files with the specified tag. ||
 || [http://pmtk3.googlecode.com/svn/trunk/toolbox/metatools/docTools/getTagText.m getTagText.m] || Returns the text appearing after the tag in the specified file. ||
+
+  * Here is a list of commonly occurring tags:
+
+    'PMTKauthor'
+    'PMTKbroken'
+    'PMTKdate'
+    'PMTKemail'
+    'PMTKinteractive'
+    'PMTKmex'
+    'PMTKmodified'
+    'PMTKneedbiotoolbox'
+    'PMTKneedsbiotoolbox'
+    'PMTKneedsmatlab'
+    'PMTKneedsoptimtoolbox'
+    'PMTKneedsstatstoobox'
+    'PMTKneedsstatstoolbox'
+    'PMTKreallyslow'
+    'PMTKrequireoptimtoolbox'
+    'PMTKslow'
+    'PMTKurl'
