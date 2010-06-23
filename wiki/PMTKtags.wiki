@@ -1,0 +1,17 @@
+#summary A description of PMTK tags, and how they are used.
+
+= Tags =
+
+Files in PMTK are annotated with tags indicating meta information such as the author, date, etc. These are comments of the following form:
+
+{{{
+% PMTKauthor Matt Dunham
+% PMTKdate  July 1, 2010
+}}}
+
+and can live anywhere in the file. All tags begin with "PMTK". The remaining text is the value of the property tag. 
+
+There are a number of tools that can help you obtain information about tags.
+
+|| pmtkTagReport.m || Generates a struct storing information on all tagged files in PMTK. ||
+|| tagfinder.m || Returns a list of all tags and their values in a specified file. ||
