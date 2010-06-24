@@ -15,4 +15,4 @@ When you contribute code, please follow these guidelines
 
   * See [http://code.google.com/p/pmtkdata/wiki/GuidelinesForContributors this page] for details on adding data sets. 
 
-  * When uploading a new [http://code.google.com/p/pmtksupport/downloads/list pmtkSupport.zip] file, modify the PMTKsupportLink property in the PMTK3 [http://pmtk3.googlecode.com/svn/trunk/config.txt config.txt] file. 
+  * See [http://code.google.com/p/pmtksupport/wiki/addingNewPackages this page] for details on adding new [http://code.google.com/p/pmtksupport/ support packages].
