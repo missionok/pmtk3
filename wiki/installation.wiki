@@ -1,6 +1,6 @@
 #summary Installation instructions for pmtk3
 
-  * Download the latest zip file from [http://code.google.com/p/pmtk3/downloads/list pmtk3], and unzip it. (Note: the zip file may not be up to date - use the [http://code.google.com/p/pmtk3/source/checkout svn interface] to get the latest version.)  
+  * Download the latest zip file from [http://code.google.com/p/pmtk3/downloads/list here], and unzip it. Alternatively, you can use the [http://code.google.com/p/pmtk3/source/checkout svn interface] to get the latest version of the source code, although this may not be as stable as the zip version.
  
  * Start Matlab/Octave. Suppose the directory where you unzipped pmtk is called 'C:\pmtk3'. Then type the following (you will need to modify the directory names if you unzipped these files to a different place).
 {{{
@@ -23,4 +23,3 @@ If you have more patience, you can try 'runDemos'
   * PMTK's automatic download feature requires perl, which comes with all MATLAB installations and linux distributions. If you are running Octave under windows, you may need to [http://www.perl.com/download.csp install perl] first.
 
   * If you cannot get automatic download to work, you can download the data manually from [http://code.google.com/p/pmtkdata/downloads/list here], unzip it, and add them to the pmtk3\data directory. Also, you can manually download the support packages  from [http://code.google.com/p/pmtksupport/downloads/list here], unzip them, and add them to pmtk3\external. You will then need to manually run the commands `addpath(genpathPMTK('C:/pmtk3/data'))` and `addpath(genpathPMTK('C:/pmtk3/external'))`. (The genpathPMTK command is like the built-in genpath command, except it excludes irrelevant folders such as those created by svn.) 
-
