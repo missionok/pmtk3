@@ -20,7 +20,7 @@ testPmtk3
 
 == Automatic downloads ==
 
-  * PMTK3 demos use various [http://pmtkdata.googlecode.com/svn/trunk/dataTable.html data sets]. These are automatically downloaded from [http://pmtkdata.googlecode.com] by the [http://pmtk3.googlecode.com/svn/trunk/toolbox/metatools/dataTools/loadData.m loadData] command whenever a demo needs them. (Once downloaded, the files are stored locally in the 'data' directory and added to your path, so next time the local copy is used.) 
+  * PMTK3 demos use various [http://pmtkdata.googlecode.com/svn/trunk/docs/dataTable.html data sets]. These are automatically downloaded from [http://pmtkdata.googlecode.com] by the [http://pmtk3.googlecode.com/svn/trunk/toolbox/metatools/dataTools/loadData.m loadData] command whenever a demo needs them. (Once downloaded, the files are stored locally in the 'data' directory and added to your path, so next time the local copy is used.) 
  
   * PMTK3 relies on various [http://pmtksupport.googlecode.com/svn/trunk/docs/authors/packageAuthors.html support packages]. These are automatically downloaded from [http://pmtksupport.googlecode.com] by [http://pmtk3.googlecode.com/svn/trunk/initPmtk3.m initPmtk3] if they are not already on your path. (Once downloaded, the files are stored locally in the 'external' directory and added to your path, so the next time the local copy is used.)
 
