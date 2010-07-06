@@ -1,0 +1,8 @@
+#gm Tutorial on graphical models using pmtk3
+
+To be written.
+
+We will have native Matlab code, as well as a Matlab 
+wrapper to libDAI. A precompiled version of libDAI for Windows
+is available from [http://code.google.com/p/pmtklibdai/] but is 500MB!
+
