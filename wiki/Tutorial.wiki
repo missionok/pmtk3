@@ -4,7 +4,7 @@
 (These are draft notes on how to use PMTK3.
 *The interface is currently undergoing many changes, so
 these notes may be inconsistent with the code*
-Everything should be stable by the end of June 2010.)
+Everything should be stable by the end of August 2010.)
 
 PMTK3 is a collection of functions for fitting probabilistic models to data,
 and then using these models to make inferences/ predictions about unknown
@@ -17,4 +17,6 @@ supported. However, we have tried to hide these details behind a simple, uniform
 
   * [http://pmtk3.googlecode.com/svn/trunk/docs/tutorial/html/tutSupervised.html Tutorial on supervised learning] (classification and regression)
 
-  * [http://code.google.com/p/pmtk3/wiki/unsupervised Tutorial on unsupervised learning] (density estimation, graphical models, etc)
+  * [http://code.google.com/p/pmtk3/wiki/unsupervised Tutorial on unsupervised learning] (density estimation)
+
+ * [http://code.google.com/p/pmtk3/wiki/gm Tutorial on graphical models] 
