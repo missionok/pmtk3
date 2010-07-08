@@ -1,0 +1,5 @@
+#summary This page details comparability issues with older versions of Matlab
+
+PMTK3 requires version 2007a (R14) or newer, however with a few adjustments it should be possible to make it work on older versions. Here is a list of known compatibility issues and possible fixes.
+
+  * bsxfun, used extensively in PMTK3 was only released in 2007a. A replacement function is available on the [http://www.mathworks.com/matlabcentral/fileexchange/18685 MATLAB file exchange].
