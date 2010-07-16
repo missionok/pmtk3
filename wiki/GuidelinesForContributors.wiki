@@ -16,3 +16,5 @@ When you contribute code, please follow these guidelines
   * See [http://code.google.com/p/pmtkdata/wiki/GuidelinesForContributors this page] for details on adding data sets. 
 
   * See [http://code.google.com/p/pmtksupport/wiki/addingNewPackages this page] for details on adding new [http://code.google.com/p/pmtksupport/ support packages].
+ 
+  * See [svnMimeTypes this page] for an important note regarding svn mime types. 
