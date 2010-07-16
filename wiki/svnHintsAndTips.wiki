@@ -29,4 +29,4 @@ system(sprintf('TortoiseProc /command:diff /path:"%s', currentdoc));
 
 The SVN Diff shortcut displays the differences between the currently open working copy of a Matlab file and the repository version. 
 
-Also see this important note regarding [SvnMimeTypes svn mime types]. 
+Also see this important note regarding [svnMimeTypes svn mime types]. 
