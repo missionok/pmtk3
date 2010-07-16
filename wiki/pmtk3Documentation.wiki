@@ -5,7 +5,7 @@
 
   * [http://code.google.com/p/pmtk3/wiki/Tutorial PMTK3 Tutorial]
 
-  * [http://people.cs.ubc.ca/~murphyk/Software/matlabTutorial/html/index.html Matlab tutorial]
+  * [http://code.google.com/p/yagtom Matlab tutorial]
 
   * [http://groups.google.com/group/pmtk?hl=en Join the PMTK email list]
 
