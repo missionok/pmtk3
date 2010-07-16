@@ -12,4 +12,4 @@ Since we host html pages from svn repository, it is important to get the [http:/
 *.html = svn:mime-type=text/html
 }}}
 
-Command line svn user should refer to [http://svnbook.red-bean.com/ this] excellent online book.
+Command line svn users should refer to [http://svnbook.red-bean.com/ this] excellent online book.
