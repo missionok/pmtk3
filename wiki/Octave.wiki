@@ -7,7 +7,7 @@ Not all of PMTK3 works in Octave. We are currently working on making most of it 
 See [http://code.google.com/p/yagtom/wiki/Octave this page] for a more general discussion of Matlab vs Octave.
 
 
-  * Octave does not yet support Matlab's Object Oriented System and has only limited support for the old style OO system, (e.g. no operator overloading support). This should  have no impact on PMTK3, which no longer uses objects. 
+  * Octave does not yet support Matlab's Object Oriented System and has only limited support for the old style OO system, (e.g. no operator overloading support). This should  have no impact on PMTK3, which no longer uses objects. However, PMTK1 and PMTK2 will not work in Octave.
 
   * Due to the previous point, graphViz4Matlab will not currently run in Octave. This is not required by PMTK3, but is useful.
 
