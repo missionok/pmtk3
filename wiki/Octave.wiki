@@ -11,4 +11,4 @@ See [http://code.google.com/p/yagtom/wiki/Octave this page] for a more general d
 
   * Due to the previous point, graphViz4Matlab will not currently run in Octave. This is not required by PMTK3, but is useful for visualizing the output of graphical model sructure learning.
 
-  * The Lightspeed 'rows' function aliases built in Octave 'rows' function. It has been renamed to rowsLightspeed in pmtkSupport.
+  * The Lightspeed 'rows' function aliases built in Octave 'rows' function. It has been renamed to rowsLightspeed in [http://code.google.com/p/pmtksupport pmtksupport].
