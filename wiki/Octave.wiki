@@ -4,10 +4,10 @@
 
 Below we discuss some issues that have come up while developing PMTK3.
 
-See [http://code.google.com/p/yagtom/wiki/Octave this page] for a more general discussion. 
+See [http://code.google.com/p/yagtom/wiki/Octave this page] for a more general discussion of Matlab vs Octave.
 
   * Octave does not yet support Matlab's Object Oriented System and has only limited support for the old style OO system, (e.g. no operator overloading support). This should  have no impact on PMTK3, which no longer uses objects. 
 
   * Due to the previous point, graphViz4Matlab will not currently run in Octave. This is not required by PMTK3, but is useful.
 
-  * The Lightspeed 'rows' function aliases built in Octave 'rows' function. Lightspeed was removed from PMTK3.
+  * The Lightspeed 'rows' function aliases built in Octave 'rows' function. It has been renamed to rowsLightspeed in pmtkSupport.
