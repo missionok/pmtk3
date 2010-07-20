@@ -1,4 +1,4 @@
-Tutorial on graphical models using pmtk3
+#summary Tutorial on graphical models using pmtk3
 
 To be written.
 
