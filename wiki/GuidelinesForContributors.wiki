@@ -7,7 +7,7 @@ When you contribute code, please follow these guidelines
 
   * Follow the guidelines on writing demos [http://code.google.com/p/pmtk3/wiki/writingDemos here]. Then, when publishDemos() is called, it will  make nice web pages, such as those listed [http://code.google.com/p/pmtk3/wiki/Demos here], 
 
-  * Use PMTKauthor, PMTKurl, PMTKdate tags so that your code is automatically detected by [http://pmtk3.googlecode.com/svn/trunk/toolbox/metatools/docTools/makeAuthorReport.m  makeAuthorReport], which auto-generates [http://code.google.com/p/pmtk3/wiki/contributingAuthors this page]
+  * Use PMTKauthor, PMTKurl, PMTKdate tags so that your code is automatically detected by [http://pmtk3.googlecode.com/svn/trunk/toolbox/metatools/docTools/generateAuthorReport.m  generateAuthorReport], which auto-generates [http://code.google.com/p/pmtk3/wiki/contributingAuthors this page]
 
   * Use the tags listed [http://pmtk3.googlecode.com/svn/trunk/toolbox/metatools/docTools/htmlTagString.m here] to tag any properties of your functions or demos. This will be used to annotate them when we auto-generate synposes such as [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/Graphical_models.html this] using [http://pmtk3.googlecode.com/svn/trunk/misc/metatools/docTools/generateSynopsisTable.m generateSynopsisTable].
 
