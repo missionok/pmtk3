@@ -129,7 +129,7 @@ for details:
 }}}
 == Example == 
 
-The published version looks like [http://pmtk3.googlecode.com/svn/trunk/docs/demoOutput/Logistic_regression/logregMultinomKernelDemo.html this].
+The published version looks like [http://pmtk3.googlecode.com/svn/trunk/docs/demoOutput/bookDemos/Discriminative_models_for_regression_and_classification/logregMultinomKernelDemo.html this].
 
 {{{
 
@@ -188,7 +188,7 @@ end
 
 == Preview your Demo == 
 
-Once you're finished writing your demo, preview what the published version will look like using the [http://pmtk3.googlecode.com/svn/trunk/misc/metatools/previewPublished.m previewPublish()] function.
+Once you're finished writing your demo, preview what the published version will look like using the [http://pmtk3.googlecode.com/svn/trunk/toolbox/metatools/docTools/previewPublished.m previewPublish()] function.
 
 {{{
 previewPublish nameOfMyDemo
