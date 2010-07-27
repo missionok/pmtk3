@@ -1,7 +1,7 @@
 #summary Things to keep in mind when writing PMTK3 demos
 = Writing Demos for Publishing =
 
-Demos in PMTK3 are automatically published to html using the [http://pmtk3.googlecode.com/svn/trunk/toolbox/metatools/publishDemos.m publishDemos()] function. To ensure that these demos look as you expect, please format the comments as follows:
+Demos in PMTK3 are automatically published to html using the [http://pmtk3.googlecode.com/svn/trunk/toolbox/metatools/docTools/publishDemos.m publishDemos()] function. To ensure that these demos look as you expect, please format the comments as follows:
 
 == Title == 
 
