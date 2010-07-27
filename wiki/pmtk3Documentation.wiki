@@ -11,6 +11,6 @@
 
   * [synopsisPages Auto-generated list of all PMTK functions], with brief (1 line) descriptions and links to their source
 
-   * [http://code.google.com/p/pmtk3/wiki/Demos Auto-generated list of all PMTK demos] published as html pages including the results of running each demp.
+   * [http://code.google.com/p/pmtk3/wiki/Demos Auto-generated list of all PMTK demos] published as html pages including the results of running each demo.
 
   * [http://code.google.com/p/pmtk3/wiki/updatingDocumentation Info on how to update the automatically-generated documentation]
