@@ -1,5 +1,4 @@
-#summary Lists PMTK models and the 'methods' they support
-
+#summary PMTK models and the methods they support
 
 
   * [http://pmtk3.googlecode.com/svn/trunk/docs/modelsByMethods/simpleModels.html Simple Models]
