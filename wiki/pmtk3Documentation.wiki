@@ -13,4 +13,6 @@
 
    * [http://code.google.com/p/pmtk3/wiki/Demos Auto-generated list of all PMTK demos] published as html pages including the results of running each demo.
 
+  * [ModelsByMethods Auto-generated tables] showing PMTK models and the methods they support. 
+
   * [http://code.google.com/p/pmtk3/wiki/updatingDocumentation Info on how to update the automatically-generated documentation]
