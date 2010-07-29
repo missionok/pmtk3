@@ -1,8 +1,11 @@
 #summary Lists PMTK models and the 'methods' they support
 
-= Models-by-Methods =
+
 
   * [http://pmtk3.googlecode.com/svn/trunk/docs/modelsByMethods/simpleModels.html Simple Models]
+
   * [http://pmtk3.googlecode.com/svn/trunk/docs/modelsByMethods/supervisedModels.html Supervised Models]
+
   * [http://pmtk3.googlecode.com/svn/trunk/docs/modelsByMethods/latentModels.html Latent Variable Models]
+
   * [http://pmtk3.googlecode.com/svn/trunk/docs/modelsByMethods/graphicalModels.html Graphical Models]
