@@ -11,12 +11,14 @@ and then using these models to make inferences/ predictions about unknown
 quantities. A large variety of models, fitting and inference algorithms are 
 supported. However, we have tried to hide these details behind a simple, uniform interface. More details can be found by following the links below.
 
+  * [ModelsByMethods auto-generated list of all the 'methods' that each kind of model 'class' supports]
+
   * [synopsisPages  auto-generated list of all PMTK functions], with brief (1 line) descriptions and links to their source.
 
    * [http://code.google.com/p/pmtk3/wiki/Demos  auto-generated list of all PMTK demos], with outputs and list to their source.
 
-  * [http://pmtk3.googlecode.com/svn/trunk/docs/tutorial/html/tutSupervised.html Tutorial on supervised learning] (classification and regression)
+  * [http://pmtk3.googlecode.com/svn/trunk/docs/tutorial/html/tutSupervised.html Tutorial on supervised learning] (classification and regression - almost finished)
 
-  * [http://code.google.com/p/pmtk3/wiki/unsupervised Tutorial on unsupervised learning] (density estimation)
+  * [http://code.google.com/p/pmtk3/wiki/unsupervised Tutorial on unsupervised learning] (density estimation  - unfinished)
 
- * [http://code.google.com/p/pmtk3/wiki/gm Tutorial on graphical models] 
+ * [http://code.google.com/p/pmtk3/wiki/gm Tutorial on graphical models] (unfinished)
