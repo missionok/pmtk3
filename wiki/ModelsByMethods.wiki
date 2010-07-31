@@ -1,7 +1,7 @@
 #summary PMTK models and the methods they support
 
 
-  * [http://pmtk3.googlecode.com/svn/trunk/docs/modelsByMethods/simpleModels.html Simple Models]
+  * [http://pmtk3.googlecode.com/svn/trunk/docs/modelsByMethods/basicModels.html Basic Models]
 
   * [http://pmtk3.googlecode.com/svn/trunk/docs/modelsByMethods/supervisedModels.html Supervised Models]
 
