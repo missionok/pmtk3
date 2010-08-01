@@ -23,7 +23,3 @@ source code, including comments on how to use it.
  * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/ProbDist.html ProbDist]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/State_space_models.html State_space_models]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/Variable_selection.html Variable_selection]
- * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/graph.html graph]
- * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/graphics.html graphics]
- * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/metatools.html metatools]
- * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/util.html util]
