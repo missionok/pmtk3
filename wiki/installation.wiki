@@ -30,4 +30,4 @@ testPmtk3
 
 == libdai interface ==
 
-PMTK3 includes an interface to the [http://people.kyb.tuebingen.mpg.de/jorism/libDAI/ libdai] C++ inference package. We have compiled a windows 32 bit version, which is available for download [http://code.google.com/p/pmtklibdai/ here]. This is not automatically downloaded due to its large size. 
+PMTK3 includes an interface to the [http://people.kyb.tuebingen.mpg.de/jorism/libDAI/ libdai] C++ inference package. We have compiled a windows 32 bit version of libdai, which is available for manual download [http://code.google.com/p/pmtklibdai/ here]. This is not automatically downloaded due to its large size. 
