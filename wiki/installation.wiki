@@ -30,7 +30,7 @@ testPmtk3
 
 == libdai interface ==
 
-PMTK3 includes an optional interface to the [http://people.kyb.tuebingen.mpg.de/jorism/libDAI/ libdai] C++ inference package. We have compiled a windows 32 bit version of libdai, which is available for manual download [http://code.google.com/p/pmtklibdai/ here]. This is not automatically downloaded due to its large size.
+PMTK3 includes an optional interface to the [http://people.kyb.tuebingen.mpg.de/jorism/libDAI/ libdai] C++ inference package. We have compiled a windows 32 bit version of libdai, which is available for manual download [http://code.google.com/p/pmtklibdai/ here]. This is not automatically downloaded due to its large size. It is relatively easy to compile on linux. Instructions can be found [http://people.kyb.tuebingen.mpg.de/jorism/libDAI/doc/build.html here].
 
 Once downloaded / installed, open the PMTK3 [http://pmtk3.googlecode.com/svn/trunk/config.txt config.txt] file in the root PMTK3 directory, and modify the libdai file path accordingly so that PMTK knows where to find it. For example, if you saved libdai to {{{C:\libdai}}}, the config line should look like this:
 
