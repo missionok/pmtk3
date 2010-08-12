@@ -6,7 +6,7 @@ If you run into problems, however, you may need to compile files manually. Here 
 
   * Before you run the {{{ mex }}} command for the first time, you need to type {{{ mex -setup }}} to tell Matlab what compiler to use. This only has to be done once per Matlab installation. 
 
-  * For standalone .c or .cpp files, (that do not link to other libraries), compilation is very easy. Suppose the file is called foo.c. Change to the directory containing foo.c, using {{ cd }}, and then type {{{ mex foo.c }}}.
+  * For standalone .c or .cpp files, (which do not link to other libraries), compilation is very easy. Suppose the file is called foo.c. Change to the directory containing foo.c, using {{ cd }}, and then type {{{ mex foo.c }}}.
 
   * If Matlab complains that your compiler is too new(!) see [http://www.infohit.net/blog/post/alternative-gcc-compilers-on-ubuntu-intrepid-and-jaunty.html this page] on downgrading gcc on ubuntu. 
 
