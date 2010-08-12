@@ -35,3 +35,5 @@ PMTK3 includes an optional interface to the [http://people.kyb.tuebingen.mpg.de/
 Once downloaded / installed, open the PMTK3 [http://pmtk3.googlecode.com/svn/trunk/config.txt config.txt] file in the root PMTK3 directory, and modify the libdai file path accordingly so that PMTK knows where to find it. For example, if you saved libdai to {{{C:\libdai}}}, the config line should look like this:
 
 {{{% PMTKlibdaiPath C:\libdai}}}
+
+Run {{{initPmtk3}}} again after making the change. 
