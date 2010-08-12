@@ -1,0 +1,22 @@
+#summary A discussion of mex files in PMTK
+
+PMTK includes a few mex files, which are Matlab interfaces to compiled c code that can be executed as though they were regular .m files. Mex files must be generated for each type of OS. Currently we have only included 32 bit linux, and windows versions. If you are using another OS, the vast majority of PMTK should still function fine. In fact initPmtk3 will try and compile .c files for you automatically, and many 'backup' .m files exist, which are called automatically if a mex version cannot be found. 
+
+If you run into problems, however, you may need to compile files manually. Here are some pointers. 
+
+  * Before you run the {{{ mex }}} command for the first time, you need to type {{{ mex -setup }}} to tell Matlab what compiler to use. This only has to be done once per Matlab installation. 
+
+  * For standalone .c or .cpp files, (that do not link to other libraries), compilation is very easy. Suppose the file is called foo.c. Change to the directory containing foo.c, using {{ cd }}, and then type {{{ mex foo.c }}}.
+
+  * If Matlab complains that your compiler is too new(!) see [http://www.infohit.net/blog/post/alternative-gcc-compilers-on-ubuntu-intrepid-and-jaunty.html this page] on downgrading gcc on ubuntu. 
+
+  * Some packages found in [http://code.google.com/p/pmtksupport/ pmtkSupport] may require custom mex commands. See their documentation for details, or look for an installation script. 
+
+  * If you do generate mex files for another OS, please send them to us so that we can include them in for others to use. 
+
+
+
+
+
+
+For more information of mex files, see the official documentation [http://www.mathworks.com/support/tech-notes/1600/1605.html here].
