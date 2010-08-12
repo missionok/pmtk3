@@ -1,4 +1,5 @@
 #summary Installation instructions for pmtk3
+== Installation ==
 
   * Download the latest zip file from [http://code.google.com/p/pmtk3/downloads/list here], and unzip it. Alternatively, you can use the [http://code.google.com/p/pmtk3/source/checkout svn interface] to get the latest version of the source code, although this may not be as stable as the zip version.
  
@@ -28,7 +29,7 @@ testPmtk3
 
   * For speed, you can download all of the data sets at once using [http://pmtk3.googlecode.com/svn/trunk/toolbox/metatools/dataTools/downloadAllData.m downloadAllData], or check them out of the [http://code.google.com/p/pmtkdata/source/checkout svn repository] directly. You can also download the support packages to a custom directory using [http://pmtk3.googlecode.com/svn/trunk/toolbox/metatools/downloadAllSupport.m downloadAllSupport]. If you have specified custom directories for pmtkData or pmtkSupport you should edit the [http://pmtk3.googlecode.com/svn/trunk/config.txt config.txt] file to specify the location of these directories. Then initPmtk3 will automatically add them to your path, and won't download anything. 
 
-== libdai interface ==
+== Libdai interface ==
 
 PMTK3 includes an optional interface to the [http://people.kyb.tuebingen.mpg.de/jorism/libDAI/ libdai] C++ inference package. We have compiled a windows 32 bit version of libdai, which is available for manual download [http://code.google.com/p/pmtklibdai/ here]. This is not automatically downloaded due to its large size. It is relatively easy to compile on linux. Instructions can be found [http://people.kyb.tuebingen.mpg.de/jorism/libDAI/doc/build.html here].
 
@@ -37,3 +38,7 @@ Once downloaded / installed, open the PMTK3 [http://pmtk3.googlecode.com/svn/tru
 {{{% PMTKlibdaiPath C:\libdai}}}
 
 Run {{{initPmtk3}}} again after making the change. 
+
+== Additional notes ==
+
+  * See [http://code.google.com/p/pmtk3/wiki/mexFiles this page] for a discussion of mex files in PMTK. 
