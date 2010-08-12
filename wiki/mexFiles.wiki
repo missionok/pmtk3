@@ -19,4 +19,4 @@ If you run into problems, however, you may need to compile files manually. Here 
 
 
 
-For more information of mex files, see the official documentation [http://www.mathworks.com/support/tech-notes/1600/1605.html here].
+For more information of mex files, see [http://yagtom.googlecode.com/svn/trunk/html/external.html this tutorial] or read the official documentation [http://www.mathworks.com/support/tech-notes/1600/1605.html here].
