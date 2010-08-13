@@ -1,6 +1,6 @@
 #summary A discussion of mex files in PMTK
 
-PMTK includes a few mex files, which are Matlab interfaces to compiled c code that can be executed as though they were regular .m files. Mex files must be generated for each type of OS. Currently we have only included 32 bit linux, and windows versions. If you are using another OS, the vast majority of PMTK should still function fine. In fact initPmtk3 will try and compile .c files for you automatically, and many 'backup' .m files exist, which are called automatically if a mex version cannot be found. 
+PMTK includes a few mex files, which are Matlab interfaces to compiled c code that can be executed as though they were regular .m files. Mex files must be generated for each type of OS. Currently we have only included 32 bit linux, and windows versions. If you are using another OS, the vast majority of PMTK should still function fine. Many 'backup' .m files exist, which are called automatically if a mex version cannot be found. 
 
 If you run into problems, however, you may need to compile files manually. Here are some pointers. 
 
