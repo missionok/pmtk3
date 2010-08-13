@@ -12,7 +12,7 @@ If you run into problems, however, you may need to compile files manually. Here 
 
   * Some versions of Matlab do not ship with a compiler. If this is the case, you can install the visual studio express 2008 C++ compiler available for free from [http://www.microsoft.com/express/Downloads/ here]. Note, Matlab does not fully support the 2010 edition yet. 
 
-  * Compiling on a 64 bit windows system requires additional setup - see [http://www.mathworks.com/support/solutions/en/data/1-6IJJ3L/?solution=1-6IJJ3L this page] for details. 
+  * Compiling on a 64 bit windows system requires additional setup, in particular, the windows [http://www.microsoft.com/downloads/en/confirmation.aspx?familyId=c17ba869-9671-4330-a63e-1fd44e0e2505&displayLang=en SDK] - see [http://www.mathworks.com/support/solutions/en/data/1-6IJJ3L/?solution=1-6IJJ3L this page] for details. 
 
   * Some packages found in [http://code.google.com/p/pmtksupport/ pmtkSupport] may require custom mex commands. See their documentation for details, or look for an installation script. 
 
