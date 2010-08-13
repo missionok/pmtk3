@@ -10,6 +10,8 @@ If you run into problems, however, you may need to compile files manually. Here 
 
   * If Matlab complains that your compiler is too new(!) see [http://www.infohit.net/blog/post/alternative-gcc-compilers-on-ubuntu-intrepid-and-jaunty.html this page] on downgrading gcc on ubuntu. 
 
+  * Some versions of Matlab do not ship with a compiler. If this is the case, you can install the visual studio express 2008 C++ compiler available for free from [http://www.microsoft.com/express/Downloads/ here]. Note, Matlab does not currently support the 2010 edition. 
+
   * Some packages found in [http://code.google.com/p/pmtksupport/ pmtkSupport] may require custom mex commands. See their documentation for details, or look for an installation script. 
 
   * If you do generate mex files for another OS, please send them to us so that we can include them in for others to use. 
