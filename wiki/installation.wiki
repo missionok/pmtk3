@@ -14,9 +14,9 @@ initPmtk3
 {{{
 testPmtk3
 }}}
- This command will check the packages are installed correctly, and automatically downloads a few datasets if they are not already on your path (see below for details), and then runs a few demos; this takes about a minute. If you have more patience, you can try 'runDemos' which takes about 20 minutes, or 'runAllDemos', which may take hours. The output produced by running all these demos is shown [http://code.google.com/p/pmtk3/wiki/Demos here].
+ This command will check the packages are installed correctly, and automatically downloads a few datasets if they are not already on your path (see below for details), and then runs a few demos; this takes about a minute. If you have more patience, you can try 'runDemos' which takes about 20 minutes, or 'runAllDemos', which may take hours. The output produced by running all these demos is shown [http://code.google.com/p/pmtk3/wiki/Demos here]. _Not all tests currently pass in Octave._
 
-Note that not all tests currently pass in Octave. 
+
 
   * The [http://graphviz4matlab.googlecode.com graphViz4Matlab] package, which is included in pmtkSupport, can be used to visualize (and edit) network structures. For best results, you should install the latest (free) version of  [http://www.graphviz.org/Download..php Graphviz]. This feature requires you to have Matlab 2008a or newer. It is not necessary to have this to use pmtk, but it is useful if you want to visualize the results of graphical model structure learning. After installation, check the path to the `Graphviz*\bin` directory in the [http://pmtk3.googlecode.com/svn/trunk/config.txt config.txt] file, or add this directory to your [http://pmtk3.googlecode.com/svn/trunk/toolbox/metatools/addtosystempath.m system path] manually. On windows systems this is usually `C:\program files\Graphviz2.26\bin`. Ubuntu/Debian users can install graphviz by typing {{{sudo apt-get install graphviz}}} at the command prompt. 
 
