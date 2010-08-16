@@ -8,9 +8,7 @@
 cd C:\pmtk3
 initPmtk3
 }}}
- This command will automatically download various supporting packages if they are not   already on your path (see below for details), so may take about 30 seconds. 
-
-_If you are using Octave, this may take much longer, and you might not see status updates while the packages are being downloaded._
+ This command will automatically download various supporting packages if they are not   already on your path (see below for details), so may take about 30 seconds. _If you are using Octave, this may take much longer, and you might not see status updates while the packages are being downloaded._
 
  * To test the system, type
 {{{
