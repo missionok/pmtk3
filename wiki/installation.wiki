@@ -32,7 +32,7 @@ testPmtk3
 
 == Libdai interface ==
 
-PMTK3 includes an optional interface to the [http://people.kyb.tuebingen.mpg.de/jorism/libDAI/ libdai] C++ inference package. We have compiled windows, and (ubuntu) linux 32 bit versions of libdai, which are included in [http://code.google.com/p/pmtksupport/ pmtkSupport], and hence automatically available. Users of other systems will need to compile libdai manually. You can find libdai's installation instructions [http://people.kyb.tuebingen.mpg.de/jorism/libDAI/doc/build.html here], and our notes on compiling libdai for windows [http://code.google.com/p/pmtk3/wiki/compilingLibdai here]. Once compiled, add the *.mex* files from libdai's matlab subfolder to the pmtkSupport libdai directory. If you generate mex files for other OS's. Please send them to us so that we can include them for others to use. 
+PMTK3 includes an optional interface to the [http://people.kyb.tuebingen.mpg.de/jorism/libDAI/ libdai] C++ inference package. We have compiled windows, and (ubuntu) linux 32 bit versions of libdai, which are included in [http://code.google.com/p/pmtksupport/ pmtkSupport], and hence automatically available. Users of other systems will need to compile libdai manually. You can find libdai's installation instructions [http://people.kyb.tuebingen.mpg.de/jorism/libDAI/doc/build.html here], and our notes on compiling libdai for windows [http://code.google.com/p/pmtk3/wiki/compilingLibdai here]. Once compiled, add the {{{*.mex*}}} files from libdai's matlab subfolder to the pmtkSupport libdai directory. If you generate mex files for other OS's. Please send them to us so that we can include them for others to use. 
 
 == Additional notes ==
 
