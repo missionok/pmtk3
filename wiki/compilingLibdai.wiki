@@ -62,7 +62,7 @@ cd path_to_libdai/matlab
 Note the "tests" directory unlike the erroneous "examples" path in their documentation.
 
 (12)
-All you need is the matlab directory containing the .mex* files. 
+If you are only using this from within Matlab, all you need is the matlab directory containing the .mex* files. 
 
 
 Assuming everything works, the whole process takes about 2 hours, but most of this is unattended. 
