@@ -17,7 +17,7 @@ libai version 0.2.6, on windows Vista 32bit, with boost 1.43, visual studio 2008
 (6) Run this command to build the boost libraries:
 
 {{{
-bjam --with-graph --with-math --with-program_options --with-test link=static runtime-link=shared
+bjam --with-graph --with-math --with-program_options --with-serialization --with-test link=static runtime-link=shared
 }}}
 
 (7)  Download libDAI from http://people.kyb.tuebingen.mpg.de/jorism/libDAI
