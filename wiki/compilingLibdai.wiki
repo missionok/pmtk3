@@ -7,7 +7,7 @@ libai version 0.2.6.
 
 (2) Change MATLAB's compiler  to visual studio 2008 using "mex -setup"
 
-(3) Download and install gnu make, diffTools and sed from http://gnuwin32.sourceforge.net/packages.html
+(3) Download and install *gnu make*, *diffUtils* and *sed* from http://gnuwin32.sourceforge.net/packages.html
 
 (4) Download and unzip boost to say C:\boost from http://www.boost.org/users/download/
 
