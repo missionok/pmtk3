@@ -1,6 +1,6 @@
 #summary Instructions on compiling under windows
 Here are instructions on compiling libdai for windows. Tested using 
-libai version 0.2.6, on windows Vista 32bit, with boost 1.43, visual studio 2008 (v9), and Matlab 2010a. 
+libai version 0.2.6, on windows Vista 32bit, with boost 1.43, visual studio 2008 (v9), and Matlab 2010a. These were adapted from the libdai instructions available from here: http://people.kyb.tuebingen.mpg.de/jorism/libDAI/
 
 
 (1) Download and install visual studio 2008 express: http://www.microsoft.com/express/Downloads/
