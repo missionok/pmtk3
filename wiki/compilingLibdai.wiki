@@ -19,7 +19,7 @@ libai version 0.2.6.
 bjam --with-graph --with-math --with-program_options --with-test link=static runtime-link=shared
 }}}
 
-(7)  Download libDAI from http://people.kyb.tuebingen.mpg.de/jorism/libDAI/libDAI-0.2.5.zip 
+(7)  Download libDAI from http://people.kyb.tuebingen.mpg.de/jorism/libDAI
 and unzip it to say C:\boost\libDAI-0.2.5. _Version 2.6 has been tested as well._
 
 
