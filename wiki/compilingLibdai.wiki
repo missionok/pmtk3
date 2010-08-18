@@ -50,6 +50,9 @@ Open "Makefile.ALL" and set "WITH_MATLAB=true", and then run make again. It does
 what its already done, but the matlab part takes quite a long time too. (Apparently you have do this
 two stage compilation; I didn't try doing it all at once).  
 
+In fact, you may be able to speed this up significantly by just typing {{{make matlabs}}}
+
+
 (11) 
 
 Open Matlab,  and test out their example:
