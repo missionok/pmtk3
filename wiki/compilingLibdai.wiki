@@ -45,13 +45,13 @@ and then type
 {{{
 make
 }}}
+
+If all you want is the matlab mex interface, (sufficient for calling libdai from withing Matlab) then you can save a lot of time and trouble by just typing {{{make matlabs}}}, (with the s). If so, skip step 10.
+
 (10) After its compiled, (roughly an hour on my system) you need to compile the matlab interface:
 Open "Makefile.ALL" and set "WITH_MATLAB=true", and then run make again. It doesn't recompile
 what its already done, but the matlab part takes quite a long time too. (Apparently you have do this
 two stage compilation; I didn't try doing it all at once).  
-
-In fact, you may be able to speed this up significantly by just typing {{{make matlabs}}}
-
 
 (11) 
 
