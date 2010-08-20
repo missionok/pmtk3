@@ -3,4 +3,4 @@
 To be written.
 
 We will have native Matlab code, based in part on
-[http://bnt.googlecode.com BNT] but much faster. We will also have a Matlab  wrapper to [http://people.kyb.tuebingen.mpg.de/jorism/libDAI/ libDAI]. A precompiled version of libDAI for Windows is available from [http://code.google.com/p/pmtklibdai/] but is 500MB!
+[http://bnt.googlecode.com BNT] but much faster. We will also have a Matlab  wrapper to [http://people.kyb.tuebingen.mpg.de/jorism/libDAI/ libDAI]. 
