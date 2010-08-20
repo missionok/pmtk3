@@ -17,9 +17,6 @@ testPmtk3
  This command will check the packages are installed correctly, and automatically downloads a few datasets if they are not already on your path (see below for details), and then runs a few demos; this takes about a minute. If you have more patience, you can try 'runDemos' which takes about 20 minutes, or 'runAllDemos', which may take hours. The output produced by running all these demos is shown [http://code.google.com/p/pmtk3/wiki/Demos here]. _Currently, some tests fail in Octave._
 
 
-
-  * The [http://graphviz4matlab.googlecode.com graphViz4Matlab] package, which is included in pmtkSupport, can be used to visualize (and edit) network structures. For best results, you should install the latest (free) version of  [http://www.graphviz.org/Download..php Graphviz]. This feature requires you to have Matlab 2008a or newer. It is not necessary to have this to use pmtk, but it is useful if you want to visualize the results of graphical model structure learning. After installation, check the path to the `Graphviz*\bin` directory in the [http://pmtk3.googlecode.com/svn/trunk/config.txt config.txt] file, or add this directory to your [http://pmtk3.googlecode.com/svn/trunk/toolbox/metatools/addtosystempath.m system path] manually. On windows systems this is usually `C:\program files\Graphviz2.26\bin`. Ubuntu/Debian users can install graphviz by typing {{{sudo apt-get install graphviz}}} at the command prompt. 
-
 == Automatic downloads ==
 
   * PMTK3 demos use various [http://pmtkdata.googlecode.com/svn/trunk/docs/dataTable.html data sets]. These are automatically downloaded from [http://pmtkdata.googlecode.com] by the [http://pmtk3.googlecode.com/svn/trunk/toolbox/metatools/dataTools/loadData.m loadData] command whenever a demo needs them. (Once downloaded, the files are stored locally in the 'data' directory and added to your path, so next time the local copy is used.) 
@@ -33,6 +30,11 @@ testPmtk3
 == Libdai interface ==
 
 PMTK3 includes an optional interface to the [http://people.kyb.tuebingen.mpg.de/jorism/libDAI/ libdai] C++ inference package. We have compiled windows (32bit and 64bit), and (ubuntu) linux 32 bit versions of libdai, which are included in [http://code.google.com/p/pmtksupport/ pmtkSupport], and hence automatically available. Users of other systems will need to compile libdai manually. You can find libdai's installation instructions [http://people.kyb.tuebingen.mpg.de/jorism/libDAI/doc/build.html here], and our notes on compiling libdai for windows [http://code.google.com/p/pmtk3/wiki/compilingLibdai here]. Once compiled, add the {{{*.mex*}}} files from libdai's matlab subfolder to the pmtkSupport libdai directory. If you generate mex files for other OS's, please send them to us so that we can include them for others to use. 
+
+== Graphviz == 
+
+* The [http://graphviz4matlab.googlecode.com graphViz4Matlab] package, which is included in pmtkSupport, can be used to visualize (and edit) network structures. For best results, you should install the latest (free) version of  [http://www.graphviz.org/Download..php Graphviz]. This feature requires you to have Matlab 2008a or newer. It is not necessary to have this to use pmtk, but it is useful if you want to visualize the results of graphical model structure learning. After installation, check the path to the `Graphviz*\bin` directory in the [http://pmtk3.googlecode.com/svn/trunk/config.txt config.txt] file, or add this directory to your [http://pmtk3.googlecode.com/svn/trunk/toolbox/metatools/addtosystempath.m system path] manually. On windows systems this is usually `C:\program files\Graphviz2.26\bin`. Ubuntu/Debian users can install graphviz by typing {{{sudo apt-get install graphviz}}} at the command prompt. 
+
 
 == Additional notes ==
 
