@@ -24,3 +24,6 @@ If you run into problems, however, you may need to compile files manually. Here 
 
   * Octave now supports mex files, (as well as their own .oct interface), but we have not yet included any. One issue is that Octave uses the same mex extension, (simply .mex) for every OS making it difficult to include them for more than one platform. A solution for the future might be to have initPmtk3 automatically rename 'archived' versions depending on the detected system. The command to compile a .c file, (written as mex interface) is the same as in Matlab, (at least from within Octave): {{{ mex foo.c }}}. See [http://www.gnu.org/software/octave/doc/interpreter/Mex_002dFiles.html this page] for more details. 
 
+=== Automatic Compilation ===
+
+  * In the future, we may add automatic compilation support. See the [http://matlabtools.googlecode.com/svn/trunk/metaTools/compileC.m compileC.m] function for an existing basic implementation. Unfortunately, the majority of the packages in pmtkSupport require custom linking commands, and so can't simply walk over all of the .c files found calling mex. 
