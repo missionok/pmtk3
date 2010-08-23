@@ -46,4 +46,4 @@ testPmtk3
 
   * initPmtk3 looks for the presence of two files to determine if it should auto-download: {{{matlatToolsRoot.m}}}, and {{{pmtkSupportRoot.m}}}. If you run into problems, or want to  make sure you are using the most current version of matlabTools, or pmtkSupport, remove these files, and rerun initPmtk3. 
 
-  * PMTK is not yet 100% octave compatible. If you run into problems in Octave, check out [http://code.google.com/p/yagtom/wiki/Octave this wiki] page, or [http://code.google.com/p/pmtk3/wiki/mexFiles this page] on mex files.
+  * PMTK is not yet 100% octave compatible. If you run into problems in Octave, check out [http://code.google.com/p/yagtom/wiki/Octave this wiki] page, or [http://code.google.com/p/pmtk3/wiki/mexFiles this page] on mex files. If you would like to help make PMTK more octave compatible, please request svn write permission by sending Kevin Murphy an e-mail. 
