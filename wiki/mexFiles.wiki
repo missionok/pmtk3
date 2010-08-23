@@ -1,12 +1,16 @@
 #summary A discussion of mex files in PMTK
+=== Mex ===
 
 PMTK includes a few mex files, which are Matlab interfaces to compiled c code that can be executed as though they were regular .m files. Mex files must be generated for each type of OS. Currently we have only included 32 bit linux, and windows versions. If you are using another OS, the vast majority of PMTK should still function fine. Many 'backup' .m files exist, which are called automatically if a mex version cannot be found. 
 
 If you run into problems, however, you may need to compile files manually. Here are some pointers. 
 
+
   * Before you run the {{{ mex }}} command for the first time, you need to type {{{ mex -setup }}} to tell Matlab what compiler to use. This only has to be done once per Matlab installation. 
 
   * For standalone .c or .cpp files, (which do not link to other libraries), compilation is very easy. Suppose the file is called foo.c. Change to the directory containing foo.c, using {{{ cd }}}, and then type {{{ mex foo.c }}}.
+
+* On newer Matlab versions, (> 2006a) you should use the {{{-largeArrayDims}}} switch to mex, which lets the mex file handle arrays larger than 2.^32. This is required when compiling on a 64 bit OS. For example, the above command would become {{{mex -largeArrayDims foo.c}}}
 
   * If Matlab complains that your compiler is too new(!) see [http://www.infohit.net/blog/post/alternative-gcc-compilers-on-ubuntu-intrepid-and-jaunty.html this page] on downgrading gcc on ubuntu. 
 
