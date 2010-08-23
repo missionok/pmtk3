@@ -10,13 +10,13 @@ If you run into problems, however, or want increased speed, you may need to comp
 
  * Some versions of Matlab do not ship with a compiler. If this is the case, you can install the visual studio express 2008 C++ compiler available for free from [http://www.microsoft.com/express/Downloads/ here]. Note, Matlab does not fully support the 2010 edition yet, (at least not without patches). The visual studio compiler may also generate better code than the built in Matlab lcc. 
 
+ * Compiling on a 64 bit windows system requires additional setup, in particular, the windows [http://www.microsoft.com/downloads/en/confirmation.aspx?familyId=c17ba869-9671-4330-a63e-1fd44e0e2505&displayLang=en SDK] - see [http://www.mathworks.com/support/solutions/en/data/1-6IJJ3L/?solution=1-6IJJ3L this page] for official details. However, I had to use the instructions and files from  [http://www.mathworks.com/matlabcentral/fileexchange/22689 this] file exchange posting to get it to work. 
+
   * For standalone .c or .cpp files, (which do not link to other libraries), compilation is very easy. Suppose the file is called foo.c. Change to the directory containing foo.c, using {{{ cd }}}, and then type {{{ mex foo.c }}}.
 
   * On newer Matlab versions, (> 2006a) you should use the {{{-largeArrayDims}}} switch to mex, which lets the mex file handle arrays larger than 2.^32. This is required when compiling on a 64 bit OS. For example, the above command would become {{{mex -largeArrayDims foo.c}}}
 
   * If Matlab complains that your compiler is too new(!) see [http://www.infohit.net/blog/post/alternative-gcc-compilers-on-ubuntu-intrepid-and-jaunty.html this page] on downgrading gcc on ubuntu. 
-
-  * Compiling on a 64 bit windows system requires additional setup, in particular, the windows [http://www.microsoft.com/downloads/en/confirmation.aspx?familyId=c17ba869-9671-4330-a63e-1fd44e0e2505&displayLang=en SDK] - see [http://www.mathworks.com/support/solutions/en/data/1-6IJJ3L/?solution=1-6IJJ3L this page] for official details. However, I had to use the instructions and files from  [http://www.mathworks.com/matlabcentral/fileexchange/22689 this] file exchange posting to get it to work. 
 
   * Some packages found in [http://code.google.com/p/pmtksupport/ pmtkSupport] may require custom mex commands. See their documentation for details, or look for an installation script. Generally this involves linking to other source files. Simply specify the additional files to link to as in {{{ mex -largeArrayDims foo.c utils.h }}}. If you need to compile a file first for inclusion in multiple mex files, use e.g. {{{ mex -c utils.c utils.h}}}, which will create a {{{.o}}} file on linux and a {{{.obj}}} file in Matlab. You can the link to these using e.g. {{{mex -largeArrayDims foo.c utils.obj}}}.
 
