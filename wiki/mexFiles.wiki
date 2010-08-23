@@ -18,7 +18,7 @@ If you run into problems, however, you may need to compile files manually. Here 
 
   * Compiling on a 64 bit windows system requires additional setup, in particular, the windows [http://www.microsoft.com/downloads/en/confirmation.aspx?familyId=c17ba869-9671-4330-a63e-1fd44e0e2505&displayLang=en SDK] - see [http://www.mathworks.com/support/solutions/en/data/1-6IJJ3L/?solution=1-6IJJ3L this page] for official details. However, I had to use the instructions and files from  [http://www.mathworks.com/matlabcentral/fileexchange/22689 this] file exchange posting to get it to work. 
 
-  * Some packages found in [http://code.google.com/p/pmtksupport/ pmtkSupport] may require custom mex commands. See their documentation for details, or look for an installation script. 
+  * Some packages found in [http://code.google.com/p/pmtksupport/ pmtkSupport] may require custom mex commands. See their documentation for details, or look for an installation script. Generally this involves linking to other source files. Simply specify the additional files to link to as in {{{ mex -largeArrayDims foo.c utils.h }}}. If you need to compile a file first for inclusion in multiple mex files, use e.g. {{{ mex -c utils.c utils.h}}}, which will create a {{{.o}}} file on linux and a {{{.obj}}} file in Matlab. You can the link to these using e.g. {{{mex -largeArrayDims foo.c utils.obj}}}.
 
   * If you do generate mex files for another OS, please send them to us so that we can include them in for others to use. 
 
