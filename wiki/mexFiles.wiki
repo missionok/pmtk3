@@ -18,7 +18,9 @@ If you run into problems, however, you may need to compile files manually. Here 
 
   * If you do generate mex files for another OS, please send them to us so that we can include them in for others to use. 
 
+=== Octave ===
 
+Octave now supports mex files, (as well as their own .oct interface), but we have not yet included any. One issue is that Octave uses the same mex extension, (simply .mex) for every OS making it difficult to include them for more than one platform. A solution for the future might be to have initPmtk3 automatically rename 'archived' versions depending on the detected system. The command to compile a .c file, (written as mex interface) is the same as in Matlab, (at least from within Octave): {{{ mex foo.c }}}.
 
 
 
