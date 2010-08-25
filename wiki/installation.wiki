@@ -27,6 +27,11 @@ testPmtk3
 
   * For speed, you can download all of the data sets at once using [http://pmtk3.googlecode.com/svn/trunk/toolbox/metatools/dataTools/downloadAllData.m downloadAllData], or check them out of the [http://code.google.com/p/pmtkdata/source/checkout svn repository] directly. You can also download the support packages to a custom directory using [http://pmtk3.googlecode.com/svn/trunk/toolbox/metatools/downloadAllSupport.m downloadAllSupport]. If you have specified custom directories for pmtkData or pmtkSupport you should edit the [http://pmtk3.googlecode.com/svn/trunk/config.txt config.txt] file to specify the location of these directories. Then initPmtk3 will automatically add them to your path, and won't download anything. 
 
+
+== Mex files ==
+
+  * Most of PMTK is written in Matlab, so should run on any system. However, a few functions also have C versions, or only have C versions, for speed. We have included precompiled versions of these files. See [http://code.google.com/p/pmtk3/wiki/mexFiles this page] for details on recompiling them, if necessary. 
+
 == Libdai interface ==
 
   * PMTK3 includes an optional interface to the [http://people.kyb.tuebingen.mpg.de/jorism/libDAI/ libdai] graphical model inference package, written in C++ by Joris Mooij. We have compiled windows (32bit and 64bit), and (ubuntu) linux 32 bit versions of libdai, which are included in [http://code.google.com/p/pmtksupport/ pmtkSupport], and hence automatically available. Users of other systems will need to compile libdai manually. You can find libdai's installation instructions [http://people.kyb.tuebingen.mpg.de/jorism/libDAI/doc/build.html here], and our notes on compiling libdai for windows [http://code.google.com/p/pmtk3/wiki/compilingLibdai here]. Once compiled, add the {{{*.mex*}}} files from libdai's matlab subfolder to the pmtkSupport libdai directory. If you generate mex files for other OS's, please send them to us so that we can include them for others to use. 
@@ -36,9 +41,6 @@ testPmtk3
   * The [http://graphviz4matlab.googlecode.com graphViz4Matlab] package, which is included in pmtkSupport, can be used to visualize (and edit) network structures. For best results, you should install the latest (free) version of  [http://www.graphviz.org/Download..php Graphviz]. This feature requires you to have Matlab 2008a or newer. It is not necessary to have this to use pmtk, but it is useful if you want to visualize the results of graphical model structure learning, and/or run some of the demos. After installation, check the path to the `Graphviz*\bin` directory in the [http://pmtk3.googlecode.com/svn/trunk/config.txt config.txt] file, or add this directory to your [http://pmtk3.googlecode.com/svn/trunk/toolbox/metatools/addtosystempath.m system path] manually. On windows systems this is usually `C:\program files\Graphviz2.26\bin`. Ubuntu/Debian users can install graphviz by typing {{{sudo apt-get install graphviz}}} at the command prompt. 
 
 
-== Additional notes ==
-
-  * See [http://code.google.com/p/pmtk3/wiki/mexFiles this page] for a discussion of mex files in PMTK. 
 
 == Troubleshooting ==
 
