@@ -9,7 +9,7 @@ source code, including comments on how to use it.
 
 
 
-=== {{{BasicModels}}} ===
+=== {{{BasicModels/}}} ===
 
 
  * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/BasicModels/beta.html beta]
@@ -35,7 +35,7 @@ source code, including comments on how to use it.
  * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/BasicModels/wishart.html wishart]
 
 
-=== {{{GraphicalModels}}} ===
+=== {{{GraphicalModels/}}} ===
 
 
  * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/GraphicalModels/crf2.html crf2]
@@ -48,7 +48,7 @@ source code, including comments on how to use it.
  * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/GraphicalModels/tree.html tree]
 
 
-=== {{{LatentVariableModels}}} ===
+=== {{{LatentVariableModels/}}} ===
 
 
  * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/LatentVariableModels/hmm.html hmm]
@@ -61,7 +61,7 @@ source code, including comments on how to use it.
  * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/LatentVariableModels/sub.html sub]
 
 
-=== {{{SupervisedModels}}} ===
+=== {{{SupervisedModels/}}} ===
 
 
  * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/SupervisedModels/discrimAnalysis.html discrimAnalysis]
@@ -78,7 +78,7 @@ source code, including comments on how to use it.
  * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/SupervisedModels/svm.html svm]
 
 
-=== {{{Algorithms}}} ===
+=== {{{Algorithms/}}} ===
 
 
  * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/Algorithms/imputation.html imputation]
