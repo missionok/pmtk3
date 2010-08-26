@@ -9,17 +9,6 @@ source code, including comments on how to use it.
 
 
 
-=== {{{Algorithms}}} ===
-
-
- * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/Algorithms/imputation.html imputation]
- * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/Algorithms/inference.html inference]
- * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/Algorithms/kmeans.html kmeans]
- * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/Algorithms/mcmc.html mcmc]
- * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/Algorithms/optimization.html optimization]
- * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/Algorithms/variableSelection.html variableSelection]
-
-
 === {{{BasicModels}}} ===
 
 
@@ -87,3 +76,14 @@ source code, including comments on how to use it.
  * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/SupervisedModels/probitRegression.html probitRegression]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/SupervisedModels/rvm.html rvm]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/SupervisedModels/svm.html svm]
+
+
+=== {{{Algorithms}}} ===
+
+
+ * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/Algorithms/imputation.html imputation]
+ * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/Algorithms/inference.html inference]
+ * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/Algorithms/kmeans.html kmeans]
+ * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/Algorithms/mcmc.html mcmc]
+ * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/Algorithms/optimization.html optimization]
+ * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/Algorithms/variableSelection.html variableSelection]
