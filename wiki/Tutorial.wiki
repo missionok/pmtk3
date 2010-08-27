@@ -4,7 +4,7 @@
 These are unfinished notes on how to use PMTK3. They will
 be completed during September 2010.
 
- * [http://pmtk3.googlecode.com/svn/trunk/docs/tutorial/html/tutFoundations.html Foundations]
+ * [http://pmtk3.googlecode.com/svn/trunk/docs/tutorial/html/tutFoundations.html Foundations] (overall design and basic models)
 
   * [http://pmtk3.googlecode.com/svn/trunk/docs/tutorial/html/tutSupervised.html  Supervised learning] (classification and regression)
 
