@@ -1,18 +1,15 @@
 #summary Tutorial on PMTK3
 
 
-(These are draft notes on how to use PMTK3.
-*The interface is currently undergoing many changes, so
-these notes may be inconsistent with the code*
-Everything should be stable by the end of August 2010.)
+These are draft notes on how to use PMTK3. They will
+be completed during the Fall of 2010.
 
-PMTK3 is a collection of functions for fitting probabilistic models to data,
-and then using these models to make inferences/ predictions about unknown
-quantities. A large variety of models, fitting and inference algorithms are 
-supported. However, we have tried to hide these details behind a simple, uniform interface. More details can be found by following the links below.
+ * [http://pmtk3.googlecode.com/svn/trunk/docs/tutorial/html/tutFoundations.html Foundations]
 
-  * [http://pmtk3.googlecode.com/svn/trunk/docs/tutorial/html/tutSupervised.html Tutorial on supervised learning] (classification and regression - almost finished)
+  * [http://pmtk3.googlecode.com/svn/trunk/docs/tutorial/html/tutSupervised.html  Supervised learning] (classification and regression)
 
-  * [http://code.google.com/p/pmtk3/wiki/unsupervised Tutorial on unsupervised learning] (density estimation  - unfinished)
+ * [http://pmtk3.googlecode.com/svn/trunk/docs/tutorial/html/tutLVM.html Latent variable models] (mixture models, PCA, HMMs, etc.)
+
+ * [http://pmtk3.googlecode.com/svn/trunk/docs/tutorial/html/tutGM.html Graphical models] (Bayes nets, MRFs, etc.)
 
  * [http://code.google.com/p/pmtk3/wiki/gm Tutorial on graphical models] (unfinished)
