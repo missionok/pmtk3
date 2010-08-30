@@ -53,10 +53,9 @@ source code, including comments on how to use it.
 
  * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/LatentVariableModels/hmm.html hmm]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/LatentVariableModels/lds.html lds]
- * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/LatentVariableModels/mixDiscrete.html mixDiscrete]
- * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/LatentVariableModels/mixGauss.html mixGauss]
+ * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/LatentVariableModels/mixGaussBayes.html mixGaussBayes]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/LatentVariableModels/mixGaussDiscrete.html mixGaussDiscrete]
- * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/LatentVariableModels/mixStudent.html mixStudent]
+ * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/LatentVariableModels/mixtureModel.html mixtureModel]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/LatentVariableModels/ppca.html ppca]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/LatentVariableModels/sub.html sub]
 
