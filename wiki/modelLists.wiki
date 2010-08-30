@@ -1,0 +1,6 @@
+#summary Auto-generated lists of models by group
+
+  * [http://pmtk3.googlecode.com/svn/trunk/docs/modelLists/basicList.html Basic Models]
+  * [http://pmtk3.googlecode.com/svn/trunk/docs/modelLists/supervisedList.html Supervised Models]
+  * [http://pmtk3.googlecode.com/svn/trunk/docs/modelLists/latentList.html Latent Variable Models]
+  * [http://pmtk3.googlecode.com/svn/trunk/docs/modelLists/graphicalList.html Graphical Models]  
