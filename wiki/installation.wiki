@@ -48,7 +48,7 @@ testPmtk3
 
   * Octave users on windows systems need to have an unzip.exe file on the system path. If you don't, you can download one from [http://www.info-zip.org/ info-zip], or use this [http://pmtk3.googlecode.com/files/unzip.exe 32bit version] from our site. Whatever unzip program you use, it must be called "unzip" and be on your _system_ path. 
 
-  * Octave under linux can sometimes fail to include all the of the necessary directories after the call to initPmtk3. If this happens you may need to manually type {{{restoredefaultpath(); addpath(genpath(pwd))}}} after running initPmtk3() for the first time, and then addpath(genpath(pwd)) subsequent times instead of {{{initPmtk3}}}. 
+  * Octave under linux can sometimes fail to include all the of the necessary directories after the call to initPmtk3. If this happens you may need to manually type {{{restoredefaultpath(); addpath(genpath(pwd))}}} after running initPmtk3() for the first time, and then {{{addpath(genpath(pwd))}}} subsequent times instead of {{{initPmtk3}}}. 
 
   * initPmtk3 looks for the presence of two files to determine if it should auto-download: {{{matlatToolsRoot.m}}}, and {{{pmtkSupportRoot.m}}}. If you run into problems, or want to  make sure you are using the most current version of matlabTools, or pmtkSupport, remove these files, and rerun initPmtk3. 
 
