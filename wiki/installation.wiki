@@ -44,7 +44,7 @@ testPmtk3
 
 == Troubleshooting ==
 
-  * Octave does not always seem to include the current working directory on the path. You may need to type e.g. {{{addpath('C:\pmtk3')}}}, before typing {{{initPmtk3}}}.
+  * Octave does not always seem to include the current working directory on the path. You may need to type e.g. {{{addpath('C:\pmtk3')}}}, before typing {{{initPmtk3}}}. It also doesn't seem to like spaces in file paths. 
 
   * initPmtk3 looks for the presence of two files to determine if it should auto-download: {{{matlatToolsRoot.m}}}, and {{{pmtkSupportRoot.m}}}. If you run into problems, or want to  make sure you are using the most current version of matlabTools, or pmtkSupport, remove these files, and rerun initPmtk3. 
 
