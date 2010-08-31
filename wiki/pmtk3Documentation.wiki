@@ -9,10 +9,6 @@
 
   * [http://code.google.com/p/pmtk3/wiki/Tutorial PMTK3 Tutorial]
 
-  * [http://code.google.com/p/pmtk3/wiki/modelLists Auto-generated list] of all PMTK models
- 
-  * [ModelsByMethods Auto-generated list] of all the 'methods' that each kind of model 'class' supports
-
   * [synopsisPages Auto-generated list of all PMTK functions], with brief (1 line) descriptions and links to their source
 
    * [http://code.google.com/p/pmtk3/wiki/Demos Auto-generated list of all PMTK demos] published as html pages including the results of running each demo.
