@@ -26,7 +26,7 @@ If you run into problems, however, or want increased speed, you may need to comp
 
 === Octave ===
 
-  * Octave now supports mex files, (as well as their own .oct interface), but we have not yet included any. One issue is that Octave uses the same mex extension, (simply .mex) for every OS making it difficult to include them for more than one platform. A solution for the future might be to have initPmtk3 automatically rename 'archived' versions depending on the detected system. The command to compile a .c file, (written as mex interface) is the same as in Matlab, (at least from within Octave): {{{ mex foo.c }}}. See [http://www.gnu.org/software/octave/doc/interpreter/Mex_002dFiles.html this page] for more details. 
+  * Octave now supports mex files, (as well as their own .oct interface), but we have not yet included any. One issue is that Octave uses the same mex extension, (simply .mex) for every OS making it difficult to include them for more than one platform. A solution for the future might be to have initPmtk3 automatically rename 'archived' versions depending on the detected system. The command to compile a .c file, (written as mex interface) is the same as in Matlab, (at least from within Octave): {{{ mex foo.c }}}. See [http://www.gnu.org/software/octave/doc/interpreter/Dynamically-Linked-Functions.html#Dynamically-Linked-Functions this page] for more details. 
 
 === Automatic Compilation ===
 
