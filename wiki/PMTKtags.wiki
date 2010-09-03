@@ -20,7 +20,7 @@
 || [http://matlabtools.googlecode.com/svn/trunk/metaTools/tagfinder.m tagfinder.m] || Returns a list of all tags and their values in a specified file. ||
 || [http://matlabtools.googlecode.com/svn/trunk/metaTools/hasTag.m hasTag.m] || Returns true, if a specified file has a specified tag. ||
 || [http://matlabtools.googlecode.com/svn/trunk/metaTools/findAllFilesWithTag.m findAllFilesWithTag.m] || Returns a list of all files with the specified tag. ||
-|| [http://matlabtools.googlecode.com/svn/trunk/metaTools/getTagText.mgetTagText.m] || Returns the text appearing after the tag in the specified file. ||
+|| [http://matlabtools.googlecode.com/svn/trunk/metaTools/getTagText.m getTagText.m] || Returns the text appearing after the tag in the specified file. ||
 
   * Here is a list of commonly occurring tags:
 
