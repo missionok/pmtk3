@@ -188,7 +188,7 @@ end
 
 == Preview your Demo == 
 
-Once you're finished writing your demo, preview what the published version will look like using the [http://pmtk3.googlecode.com/svn/trunk/toolbox/metatools/docTools/previewPublished.m previewPublish()] function.
+Once you're finished writing your demo, preview what the published version will look like using the [http://matlabtools.googlecode.com/svn/trunk/metaTools/previewPublished.m previewPublish()] function.
 
 {{{
 previewPublish nameOfMyDemo
