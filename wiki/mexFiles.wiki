@@ -30,4 +30,4 @@ If you run into problems, however, or want increased speed, you may need to comp
 
 === Automatic Compilation ===
 
-  * In the future, we may add automatic compilation support. See the [http://matlabtools.googlecode.com/svn/trunk/metaTools/compileC.m compileC.m] function for an existing basic implementation. Unfortunately, the majority of the packages in pmtkSupport require custom linking commands, and so can't simply walk over all of the .c files found, calling mex. 
+  * In the future, we may add automatic compilation support. See the [http://matlabtools.googlecode.com/svn/trunk/metaTools/compileC.m compileC.m] function for an existing basic implementation. Unfortunately, the majority of the packages in pmtkSupport require custom linking commands, and so we can't simply walk over all of the .c files found, calling mex. 
