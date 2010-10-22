@@ -16,6 +16,15 @@ testPmtk3
 }}}
  This command will check the packages are installed correctly, and automatically downloads a few datasets if they are not already on your path (see below for details), and then runs a few demos; this takes about a minute. If you have more patience, you can try 'runDemos' which takes about 45 minutes, or 'runAllDemos', which may take hours. The output produced by running all these demos is shown [http://code.google.com/p/pmtk3/wiki/Demos here]. 
 
+ * Possible warnings. You may get warning messages such as
+{{{
+Warning: In the directory "C:\kmurphy\GoogleCode\pmtkSupport\glmnet-matlab", glmnetMex.mexw32 now shadows glmnetMex.dll.
+}}}
+ You can safely ignore these. (It just means there are two versions of the executable on the path: .mexw32 is the 32 bit Windows version for new versions of Matlab, and .dll is for older versions of Matlab.)
+
+
+
+
 
 == Automatic downloads ==
 
