@@ -16,12 +16,17 @@ testPmtk3
 }}}
  This command will check the packages are installed correctly, and automatically downloads a few datasets if they are not already on your path (see below for details), and then runs a few demos; this takes about a minute. If you have more patience, you can try 'runDemos' which takes about 45 minutes, or 'runAllDemos', which may take hours. The output produced by running all these demos is shown [http://code.google.com/p/pmtk3/wiki/Demos here]. 
 
- * Possible warnings. You may get warning messages such as
+ * Possible warnings. You may get this warning message
 {{{
 Warning: In the directory "C:\kmurphy\GoogleCode\pmtkSupport\glmnet-matlab", glmnetMex.mexw32 now shadows glmnetMex.dll.
 }}}
- You can safely ignore these. (It just means there are two versions of the executable on the path: .mexw32 is the 32 bit Windows version for new versions of Matlab, and .dll is for older versions of Matlab.)
-
+ You can safely ignore this. (It just means there are two versions of the executable on the path: .mexw32 is the 32 bit Windows version for new versions of Matlab, and .dll is for older versions of Matlab.)
+Similarly, you may get this message or something similar:
+{{{
+Warning: from glmnet fortran code - Convergence for 33th lambda value not reached after maxit=100
+iterations; solutions for larger lambdas returned
+}}}
+Again, you can safely ignore this. (It is caused by the glmnet package when it attempts to compute the full regularization path. This functionality is not central to anything used by pmtk.)
 
 
 
