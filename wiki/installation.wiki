@@ -20,8 +20,7 @@ testPmtk3
 {{{
 Warning: In the directory "C:\kmurphy\GoogleCode\pmtkSupport\glmnet-matlab", glmnetMex.mexw32 now shadows glmnetMex.dll.
 }}}
- You can safely ignore this. (It just means there are two versions of the executable on the path: .mexw32 is the 32 bit Windows version for new versions of Matlab, and .dll is for older versions of Matlab.)
-Similarly, you may get this message or something similar:
+You can safely ignore this. (It just means there are two versions of the executable on the path: .mexw32 is the 32 bit Windows version for new versions of Matlab, and .dll is for older versions of Matlab.) Similarly, you may get this message or something similar:
 {{{
 Warning: from glmnet fortran code - Convergence for 33th lambda value not reached after maxit=100
 iterations; solutions for larger lambdas returned
