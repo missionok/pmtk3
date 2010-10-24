@@ -97,39 +97,9 @@ source code, including comments on how to use it.
 
 == matlabTools ==
 
-
-
-=== {{{graph/}}} ===
-
-
- * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/graph/graph.html 
-
-
-=== {{{graphics/}}} ===
-
-
- * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/graphics/graphics.html 
-
-
-=== {{{metaTools/}}} ===
-
-
- * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/metaTools/metaTools.html 
-
-
-=== {{{oop/}}} ===
-
-
- * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/oop/oop.html 
-
-
-=== {{{stats/}}} ===
-
-
- * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/stats/stats.html 
-
-
-=== {{{util/}}} ===
-
-
- * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/util/util.html 
+ * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/graph.html 
+ * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/graphics.html 
+ * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/metaTools.html 
+ * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/oop.html 
+ * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/stats.html 
+ * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/util.html 
