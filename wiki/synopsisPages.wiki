@@ -38,26 +38,30 @@ source code, including comments on how to use it.
 === {{{GraphicalModels/}}} ===
 
 
+ * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/GraphicalModels/cpd.html cpd]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/GraphicalModels/crf2.html crf2]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/GraphicalModels/dgm.html dgm]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/GraphicalModels/dgmSeq.html dgmSeq]
+ * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/GraphicalModels/factorGraph.html factorGraph]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/GraphicalModels/ggm.html ggm]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/GraphicalModels/mrf.html mrf]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/GraphicalModels/mrf2.html mrf2]
- * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/GraphicalModels/sub.html sub]
+ * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/GraphicalModels/tabularFactor.html tabularFactor]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/GraphicalModels/tree.html tree]
 
 
 === {{{LatentVariableModels/}}} ===
 
 
+ * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/LatentVariableModels/deepBelNet.html deepBelNet]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/LatentVariableModels/hmm.html hmm]
+ * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/LatentVariableModels/kmeans.html kmeans]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/LatentVariableModels/lds.html lds]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/LatentVariableModels/mixGaussBayes.html mixGaussBayes]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/LatentVariableModels/mixGaussDiscrete.html mixGaussDiscrete]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/LatentVariableModels/mixtureModel.html mixtureModel]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/LatentVariableModels/ppca.html ppca]
- * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/LatentVariableModels/sub.html sub]
+ * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/LatentVariableModels/rbm.html rbm]
 
 
 === {{{SupervisedModels/}}} ===
@@ -69,10 +73,14 @@ source code, including comments on how to use it.
  * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/SupervisedModels/knn.html knn]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/SupervisedModels/linearRegression.html linearRegression]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/SupervisedModels/logisticRegression.html logisticRegression]
+ * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/SupervisedModels/mixexp.html mixexp]
+ * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/SupervisedModels/mlcomp.html mlcomp]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/SupervisedModels/mlp.html mlp]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/SupervisedModels/naiveBayes.html naiveBayes]
+ * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/SupervisedModels/oneVsRestClassifier.html oneVsRestClassifier]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/SupervisedModels/probitRegression.html probitRegression]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/SupervisedModels/rvm.html rvm]
+ * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/SupervisedModels/smlr.html smlr]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/SupervisedModels/svm.html svm]
 
 
@@ -81,7 +89,7 @@ source code, including comments on how to use it.
 
  * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/Algorithms/imputation.html imputation]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/Algorithms/inference.html inference]
- * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/Algorithms/kmeans.html kmeans]
+ * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/Algorithms/kernels.html kernels]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/Algorithms/mcmc.html mcmc]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/Algorithms/optimization.html optimization]
  * [http://pmtk3.googlecode.com/svn/trunk/docs/synopsis/Algorithms/variableSelection.html variableSelection]
