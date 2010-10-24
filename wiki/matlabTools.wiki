@@ -1,4 +1,4 @@
-#summary A description of the included matlabTools
+#summary Archived version of old matlabTools homepage
 
 `MatlabTools` is a collection of Matlab/Octave functions written by [http://people.cs.ubc.ca/~murphyk/ Kevin Murphy], Matt Dunham, and [contributingAuthors various other people]. It contains nearly 400 functions, and over 14,000 [http://matlabtools.googlecode.com/svn/trunk/docs/matlabToolsStats.html lines of code]. 
 It was derived by extracting various generic functions from [http://code.google.com/p/pmtk3/ PMTK3], which is a package for probabilistic data modeling. The functions in `MatlabTools` can be used independently of PMTK, but some of the function names still reflect its past. For a larger set of contributed matlab tools, see [http://www.mathworks.com/matlabcentral/].
