@@ -54,10 +54,6 @@ Again, you can safely ignore this. (It is caused by the glmnet package when it a
   * The [http://graphviz4matlab.googlecode.com graphViz4Matlab] package, which is included in pmtkSupport, can be used to visualize (and edit) network structures. For best results, you should install the latest (free) version of  [http://www.graphviz.org/Download..php Graphviz]. This feature requires you to have Matlab 2008a or newer. It is not necessary to have this to use pmtk, but it is useful if you want to visualize the results of graphical model structure learning, and/or run some of the demos. After installation, check the path to the `Graphviz*\bin` directory in the [http://pmtk3.googlecode.com/svn/trunk/config.txt config.txt] file, or add this directory to your [http://pmtk3.googlecode.com/svn/trunk/toolbox/metatools/addtosystempath.m system path] manually. On windows systems this is usually `C:\program files\Graphviz2.26\bin`. Ubuntu/Debian users can install graphviz by typing {{{sudo apt-get install graphviz}}} at the command prompt. 
 
 
-== Path issues ==
-
- * initPmtk3 looks for the presence of two files to determine if it should auto-download: {{{matlatToolsRoot.m}}}, and {{{pmtkSupportRoot.m}}}. If you run into problems, or want to  make sure you are using the most current version of matlabTools, or pmtkSupport, remove these files, and rerun initPmtk3. If {{{initPmtk3}}} freezes after doing this, an overwrite confirmation has been suppressed. Delete all of the files in the {{{external}}} and {{{matlabTools}}} directories and then rerun {{{initPmtk3}}}. 
-
 == Octave issues ==
 
  * PMTK is not yet 100% octave compatible. If you run into problems in Octave, check out [http://code.google.com/p/yagtom/wiki/Octave this wiki] page, or [http://code.google.com/p/pmtk3/wiki/mexFiles this page] on mex files, as well as the points below. If you would like to help make PMTK more compatible on Octave, please request svn write permission by sending Kevin Murphy an e-mail. 
