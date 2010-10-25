@@ -14,4 +14,4 @@ PMTK3 contains the following top-level directories
 
   * matlabTools - various generally useful matlab functions (these used to be stored in [http://matlabtools.googlecode.com matlabtools.googlecode.com], but this was merged with pmtk3 on 24oct10 to make it easier to maintain consistency)
 
-  * toolbox - the main directory containing models and algorithms
+  * toolbox - the main directory containing models and algorithms. Click [http://code.google.com/p/pmtk3/wiki/synopsisPages here] for a list of all the files within this folder, complete with brief documentation
