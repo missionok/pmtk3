@@ -2,16 +2,16 @@ Explanation of directory structure of PMTK3
 
 PMTK3 contains the following top-level directories
 
-  * data - used to store local copies of data folders that are auto-downloaded from pmtkdata.googlecode.com
+  * data - used to store local copies of data folders that are auto-downloaded from [pmtkdata.googlecode.com]
 
   * demos - various demos that test and illustrate how to use the toolbox. This has two sub directories: 'bookDemos', which contains scripts used to generate figures for [http://www.cs.ubc.ca/~murphyk/MLbook/index.html "Machine learning : a probabilistic approach"] and 'otherDemos' which use the toolbox but do not feature in the book
 
-  * docs - contains documentation which appears on pmtk3.googlecode.com. For most users this will be an empty directory
+  * docs - contains documentation which appears on [pmtk3.googlecode.com]. For most users this will be an empty directory
 
-  * external - used to store local copies of folders that are auto-downloaded from pmtksupport.googlecode.come
+  * external - used to store local copies of folders that are auto-downloaded from [pmtksupport.googlecode.com]
 
   * localUtil - various utilities that are specific to pmtk3
 
-  * matlabTools - various generally useful matlab functions (these used to be stored in matlabtools.googlecode.com, but this was merged with pmtk3 on 24oct10 to make it easier to maintain consistency)
+  * matlabTools - various generally useful matlab functions (these used to be stored in [matlabtools.googlecode.com], but this was merged with pmtk3 on 24oct10 to make it easier to maintain consistency)
 
   * toolbox - the main directory containing models and algorithms
