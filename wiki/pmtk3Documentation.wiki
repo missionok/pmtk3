@@ -12,3 +12,5 @@
   * [http://code.google.com/p/pmtk3/wiki/dirStructure PMTK3 Directory structure]
 
   * [http://code.google.com/p/pmtk3/wiki/updatingDocumentation Info on how to update the automatically-generated documentation]
+
+  * [http://code.google.com/p/pmtk3/wiki/changelog Changelog]
