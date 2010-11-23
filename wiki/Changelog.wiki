@@ -1,0 +1,15 @@
+Changelog
+
+A list of changes in reverse chronological order. (KPM=Kevin P Murphy, MD = Matt Dunham).
+
+ * 23nov10. KPM uploads a new zip file. Now the folders in bookDemos match the chapter names in the 22nov10 version of the book (http://www.cs.ubc.ca/~murphyk/MLbook/index.html) However, there are still bugs left over from the last release that I have not fixed yet (see http://pmtk3.googlecode.com/svn/trunk/docs/debugReport.html).
+
+ * 24oct10: MD uploads a new zip file. This contains pmtk3 and matlabtools. The site http://code.google.com/p/matlabtools/ is now deprecated.
+
+ * 31aug10: MD uploads a new zip file. This is a considered a 'milestone release', since it marks the end of Matt's work contract. This version is stable and has been well debugged.
+
+ * 1jan10: pmtk3 was born.
+
+ * Spring 2009. pmtk2 was born.
+
+ * Fall 2008. pmtk1 was born.
