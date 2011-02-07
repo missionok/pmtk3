@@ -29,8 +29,13 @@ Warning: from glmnet fortran code - Convergence for 33th lambda value not reache
 iterations; solutions for larger lambdas returned
 }}}
 Again, you can safely ignore this. (It is caused by the glmnet package when it attempts to compute the full regularization path. This functionality is not central to anything used by pmtk.)
-
-
+  * You may get a warning like this
+{{{
+All Tests Passed, except for the following:
+Graphviz, used by some of the demos, (via the graphViz4Matlab
+interface) cannot be found
+}}}
+You can ignore this, since graphviz is only needed for visualizing network structures (which is not core functionality). Furthermore, if graphviz is not installed, PMTK uses a more primitive graph layout method.
 
 == Automatic downloads ==
 
