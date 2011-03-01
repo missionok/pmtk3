@@ -2,6 +2,8 @@ Changelog
 
 A list of changes in reverse chronological order. (KPM=Kevin P Murphy, MD = Matt Dunham).
 
+ * 23Feb11. KPM moved files from demos/bookDemos/folder and demos/otherDemos/folder/ to demos. This  make it easier to find the demos. In addition, the bookDemos/folders had long and unwieldy names, which no longer corresponded to the book chapter titles. The current structure is completely flat, and is uncoupled from the book.
+
  * 23nov10. KPM uploads a new zip file. Now the folders in bookDemos match the chapter names in the 22nov10 version of the book (http://www.cs.ubc.ca/~murphyk/MLbook/index.html) However, there are still bugs left over from the last release that I have not fixed yet (see http://pmtk3.googlecode.com/svn/trunk/docs/debugReport.html).
 
  * 24oct10: MD uploads a new zip file. This contains pmtk3 and matlabtools. The site http://code.google.com/p/matlabtools/ is now deprecated.
