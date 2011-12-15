@@ -1,7 +1,7 @@
 #summary Root documentation page for PMTK3
 
 
-  * [http://code.google.com/p/pmtk3/wiki/installation Installation instructions]
+  * [http://code.google.com/p/pmtk3/wiki/installation Download and Installation instructions]
 
   * [http://groups.google.com/group/pmtk?hl=en Join the PMTK email list]
 
