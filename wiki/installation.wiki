@@ -5,6 +5,13 @@
 
   * Download the latest zip file from [http://code.google.com/p/pmtk3/downloads/list here], and unzip it. Alternatively, you can use the [http://code.google.com/p/pmtk3/source/checkout svn interface] to get the latest version of the source code, although this may not be as stable as the zip version.
  
+  * Edit the file config-local.txt and change the following fields
+{{{
+% PMTKlocalDataPath        /Users/kpmurphy/GoogleCode/pmtkdata
+% PMTKlocalSupportPath    /Users/kpmurphy/GoogleCode/pmtksupport
+}}}
+
+The local data and support paths are where pmtk will download the data and supporting files to, automagically (see below for details).
  * Start Matlab/Octave. Suppose the directory where you unzipped pmtk is called 'C:\pmtk3'. Then type the following (you will need to modify the directory names if you unzipped these files to a different place).
 {{{
 cd C:\pmtk3
@@ -16,34 +23,14 @@ initPmtk3
 {{{
 testPmtk3
 }}}
- This command will check the packages are installed correctly, and automatically downloads a few datasets if they are not already on your path (see below for details), and then runs a few demos; this takes about a minute. If you have more patience, you can try 'runDemos' which takes about 45 minutes, or 'runAllDemos', which may take hours. The output produced by running all these demos is shown [http://code.google.com/p/pmtk3/wiki/Demos here]. 
-
-== Warning messages ==
-
-  * You may get this warning message
-{{{
-Warning: In the directory "C:\kmurphy\GoogleCode\pmtkSupport\glmnet-matlab", glmnetMex.mexw32 now shadows glmnetMex.dll.
-}}}
-You can safely ignore this. (It just means there are two versions of the executable on the path: .mexw32 is the 32 bit Windows version for new versions of Matlab, and .dll is for older versions of Matlab.)
-  * You may get this message or something similar:
-{{{
-Warning: from glmnet fortran code - Convergence for 33th lambda value not reached after maxit=100
-iterations; solutions for larger lambdas returned
-}}}
-Again, you can safely ignore this. (It is caused by the glmnet package when it attempts to compute the full regularization path. This functionality is not central to anything used by pmtk.)
-  * You may get a warning like this
-{{{
-All Tests Passed, except for the following:
-Graphviz, used by some of the demos, (via the graphViz4Matlab
-interface) cannot be found
-}}}
-You can ignore this, since graphviz is only needed for visualizing network structures (which is not core functionality). Furthermore, if graphviz is not installed, PMTK uses a more primitive graph layout method.
+ This command will check the packages are installed correctly, and automatically downloads a few datasets if they are not already on your path (see below for details), and then runs a few demos; this takes about a minute. If you have more patience, you can try 'runDemos' which takes about 45 minutes. The output produced by running all these demos is shown [http://code.google.com/p/pmtk3/wiki/Demos here]. 
 
 == Automatic downloads ==
 
   * PMTK3 demos use various [http://pmtkdata.googlecode.com/svn/trunk/docs/dataTable.html data sets]. Each data set is automatically downloaded from [http://pmtkdata.googlecode.com] by the [http://pmtk3.googlecode.com/svn/trunk/toolbox/metatools/dataTools/loadData.m loadData] command whenever a demo needs them. (Once downloaded, the files are stored locally in the 'data' directory and added to your path, so next time the local copy is used.) Each data folder should have been individually zipped up already. If you prefer, you can download all the data at once using [http://pmtk3.googlecode.com/svn/trunk/localUtil/dataTools/downloadAllData.m downloadAllData]. _This will allow you to run pmtk3 demos without needing internet access_. In this case, you should edit the [http://pmtk3.googlecode.com/svn/trunk/config.txt config.txt] file to specify the location of the data directories. 
 
   * PMTK3 relies on various [http://pmtksupport.googlecode.com/svn/trunk/docs/authors/packageAuthors.html support packages]. These are automatically downloaded from [http://pmtksupport.googlecode.com] by [http://pmtk3.googlecode.com/svn/trunk/initPmtk3.m initPmtk3] if they are not already on your path. Once downloaded, the files are stored locally in the 'external' directory and added to your path, so the next time the local copy is used. Unlike the data sets, the support packages are downloaded all at once, not on demand.  However, you can check them all out at once if you prefer. In this case, you should edit the [http://pmtk3.googlecode.com/svn/trunk/config.txt config.txt] file to specify the location of the support directories. 
+
 
 == Mex files ==
 
@@ -55,7 +42,7 @@ You can ignore this, since graphviz is only needed for visualizing network struc
 
 == Graphviz == 
 
-  * The [http://graphviz4matlab.googlecode.com graphViz4Matlab] package, which is included in pmtkSupport, can be used to visualize (and edit) network structures. For best results, you should install the latest (free) version of  [http://www.graphviz.org/Download..php Graphviz]. This feature requires you to have Matlab 2008a or newer. It is not necessary to have this to use pmtk, but it is useful if you want to visualize the results of graphical model structure learning, and/or run some of the demos. After installation, check the path to the `Graphviz*\bin` directory in the [http://pmtk3.googlecode.com/svn/trunk/config.txt config.txt] file, or add this directory to your [http://pmtk3.googlecode.com/svn/trunk/matlabTools/metaTools/addtosystempath.m system path] manually. On windows systems this is usually `C:\program files\Graphviz2.26\bin`. Ubuntu/Debian users can install graphviz by typing {{{sudo apt-get install graphviz}}} at the command prompt. 
+  * The [http://graphviz4matlab.googlecode.com graphViz4Matlab] package, which is included in pmtkSupport, can be used to visualize (and edit) network structures. For best results, you should install the latest (free) version of  [http://www.graphviz.org/Download..php Graphviz]. This feature requires you to have Matlab 2008a or newer. It is not necessary to have graphviz to use pmtk, but it is useful if you want to visualize the results of graphical model structure learning, and/or run some of the demos. After installation, modify PMTKgvizPath in your [http://pmtk3.googlecode.com/svn/trunk/config.txt config.txt] file, and/or add this directory to your [http://pmtk3.googlecode.com/svn/trunk/matlabTools/metaTools/addtosystempath.m system path] manually. On windows systems the file  is usually stored at `C:\program files\Graphviz2.26\bin`. Ubuntu/Debian users can install graphviz by typing {{{sudo apt-get install graphviz}}} at the command prompt. 
 
 
 == Octave issues ==
@@ -67,5 +54,31 @@ You can ignore this, since graphviz is only needed for visualizing network struc
   * Octave users on windows systems need to have an unzip.exe file on the system path. If you don't, you can download one from [http://www.info-zip.org/ info-zip], or use this [http://pmtk3.googlecode.com/files/unzip.exe 32bit version] from our site. Whatever unzip program you use, it must be called "unzip" and be on your _system_ path. 
 
   * Octave under linux can sometimes fail to include all the of the necessary directories after the call to initPmtk3. If this happens you may need to manually type {{{restoredefaultpath(); addpath(genpath(pwd))}}} after running initPmtk3() for the first time, and then {{{addpath(genpath(pwd))}}} subsequent times instead of {{{initPmtk3}}}. Note that under Octave, {{{genpathPMTK}}} is very slow and does not work reliably, use {{{genpath}}} instead. 
+
+
+== Warning messages produced by glmnet ==
+
+When running runDemos, you may get various warning messages produced by the glmnet package. You can safely ignore them. Some of the more common ones are listed below, FYI.
+
+  * You may get this warning message
+{{{
+Warning: In the directory "C:\kmurphy\GoogleCode\pmtkSupport\glmnet-matlab", glmnetMex.mexw32 now shadows glmnetMex.dll.
+}}}
+You can safely ignore this. (It just means there are two versions of the executable on the path: .mexw32 is the 32 bit Windows version for new versions of Matlab, and .dll is for older versions of Matlab.)
+
+  * You may get this warning message
+{{
+cannot run lassoPathProstateClassif without glmnet; skipping
+}}}
+This just means you don't have a glmnet binary on your machine.
+
+  * You may get this message or something similar:
+{{{
+Warning: from glmnet fortran code - Convergence for 33th lambda value not reached after maxit=100
+iterations; solutions for larger lambdas returned
+}}}
+Again, you can safely ignore this. (It is caused by the glmnet package when it attempts to compute the full regularization path. This functionality is not central to anything used by pmtk.)
+
+
 
  
