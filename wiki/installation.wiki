@@ -17,7 +17,7 @@ The local data and support paths are where pmtk will download the data and suppo
 cd C:\pmtk3
 initPmtk3
 }}}
- This command will automatically download various supporting packages if they are not   already on your path (see below for details), so may take about 30 seconds. _If you are using Octave, this may take much longer._
+ This command will automatically download various supporting packages if they are not   already on your path (see below for details), so may take about 30 seconds. (If you are using Octave, this may take much longer.)
 
  * To test the system, type
 {{{
@@ -67,7 +67,7 @@ Warning: In the directory "C:\kmurphy\GoogleCode\pmtkSupport\glmnet-matlab", glm
 You can safely ignore this. (It just means there are two versions of the executable on the path: .mexw32 is the 32 bit Windows version for new versions of Matlab, and .dll is for older versions of Matlab.)
 
   * You may get this warning message
-{{
+{{{
 cannot run lassoPathProstateClassif without glmnet; skipping
 }}}
 This just means you don't have a glmnet binary on your machine.
