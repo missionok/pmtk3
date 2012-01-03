@@ -1,8 +1,6 @@
 #summary Installation instructions for pmtk3
 == Installation ==
 
-  * Pmtk3 has only been tested on Matlab 2009a or newer. It is possible it will run on 2008a or older versions (see [http://en.wikipedia.org/wiki/MATLAB#Release_history matlab release history]), but this is not guaranteed. It has been tested on windows 7, mac os X, and ubuntu linux. Octave compatibility is discussed at the end of this page.
-
   * Download the latest zip file from [http://code.google.com/p/pmtk3/downloads/list here], and unzip it. Alternatively, you can use the [http://code.google.com/p/pmtk3/source/checkout svn interface] to get the latest version of the source code, although this may not be as stable as the zip version.
 
  * Start Matlab/Octave. Suppose the directory where you unzipped pmtk is called 'C:\pmtk3'. Then type the following (you will need to modify the directory names if you unzipped these files to a different place).
@@ -16,7 +14,15 @@ initPmtk3
 {{{
 testPmtk3
 }}}
- This command will check the packages are installed correctly, automatically downloads a few datasets, and then runs a few demos; this takes about a minute. If you have more patience, you can try 'runDemos' which takes about 45 minutes. The output produced by running all these demos is shown [http://code.google.com/p/pmtk3/wiki/Demos here]. 
+ This command will check the packages are installed correctly, automatically downloads a few datasets, and then runs a few demos; this takes about a minute.
+
+  *  If you have more patience, you can try this:
+{{{
+runDemos
+}}}
+This takes about 1 hour. The output produced by running all these demos is shown [http://code.google.com/p/pmtk3/wiki/Demos here]. 
+
+  * Note: Pmtk3 has only been tested on Matlab 2009a or newer. It is possible it will run on 2008a or older versions (see [http://en.wikipedia.org/wiki/MATLAB#Release_history matlab release history]), but this is not guaranteed. It has been tested on windows 7, mac os X, and ubuntu linux. Octave compatibility is discussed at the end of this page.
 
 == Automatic downloads ==
 
