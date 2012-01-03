@@ -4,32 +4,25 @@
   * Pmtk3 has only been tested on Matlab 2009a or newer. It is possible it will run on 2008a or older versions (see [http://en.wikipedia.org/wiki/MATLAB#Release_history matlab release history]), but this is not guaranteed. It has been tested on windows 7, mac os X, and ubuntu linux. Octave compatibility is discussed at the end of this page.
 
   * Download the latest zip file from [http://code.google.com/p/pmtk3/downloads/list here], and unzip it. Alternatively, you can use the [http://code.google.com/p/pmtk3/source/checkout svn interface] to get the latest version of the source code, although this may not be as stable as the zip version.
- 
-  * Edit the file config-local.txt and change the following fields
-{{{
-% PMTKlocalDataPath        /Users/kpmurphy/GoogleCode/pmtkdata
-% PMTKlocalSupportPath    /Users/kpmurphy/GoogleCode/pmtksupport
-}}}
 
-The local data and support paths are where pmtk will download the data and supporting files to, automagically (see below for details).
  * Start Matlab/Octave. Suppose the directory where you unzipped pmtk is called 'C:\pmtk3'. Then type the following (you will need to modify the directory names if you unzipped these files to a different place).
 {{{
 cd C:\pmtk3
 initPmtk3
 }}}
- This command will automatically download various supporting packages if they are not   already on your path (see below for details), so may take about 30 seconds. (If you are using Octave, this may take much longer.)
+ This command will automatically download various supporting package, so may take about 30 seconds. (If you are using Octave, this may take much longer.)
 
  * To test the system, type
 {{{
 testPmtk3
 }}}
- This command will check the packages are installed correctly, and automatically downloads a few datasets if they are not already on your path (see below for details), and then runs a few demos; this takes about a minute. If you have more patience, you can try 'runDemos' which takes about 45 minutes. The output produced by running all these demos is shown [http://code.google.com/p/pmtk3/wiki/Demos here]. 
+ This command will check the packages are installed correctly, automatically downloads a few datasets, and then runs a few demos; this takes about a minute. If you have more patience, you can try 'runDemos' which takes about 45 minutes. The output produced by running all these demos is shown [http://code.google.com/p/pmtk3/wiki/Demos here]. 
 
 == Automatic downloads ==
 
-  * PMTK3 demos use various [http://pmtkdata.googlecode.com/svn/trunk/docs/dataTable.html data sets]. Each data set is automatically downloaded from [http://pmtkdata.googlecode.com] by the [http://pmtk3.googlecode.com/svn/trunk/toolbox/metatools/dataTools/loadData.m loadData] command whenever a demo needs them. (Once downloaded, the files are stored locally in the 'data' directory and added to your path, so next time the local copy is used.) Each data folder should have been individually zipped up already. If you prefer, you can download all the data at once using [http://pmtk3.googlecode.com/svn/trunk/localUtil/dataTools/downloadAllData.m downloadAllData]. _This will allow you to run pmtk3 demos without needing internet access_. In this case, you should edit the [http://pmtk3.googlecode.com/svn/trunk/config.txt config.txt] file to specify the location of the data directories. 
+  * PMTK3 demos use various [http://pmtkdata.googlecode.com/svn/trunk/docs/dataTable.html data sets]. Each data set is automatically downloaded from [http://pmtkdata.googlecode.com] by the [http://pmtk3.googlecode.com/svn/trunk/toolbox/metatools/dataTools/loadData.m loadData] command whenever a demo needs them. Once downloaded, the files are stored locally in the 'pmtkdataCopy' directory and added to your path, so next time the local copy is used) Each data folder should have been individually zipped up already. If you prefer, you can download all the data at once using [http://pmtk3.googlecode.com/svn/trunk/localUtil/dataTools/downloadAllData.m downloadAllData]. _This will allow you to run pmtk3 demos without needing internet access_. In this case, you should edit the [http://pmtk3.googlecode.com/svn/trunk/config-local.txt config-local.txt] file to specify the location of the data directory. This will be added to your path by initPmtk3, so no more downloading will occur. 
 
-  * PMTK3 relies on various [http://pmtksupport.googlecode.com/svn/trunk/docs/authors/packageAuthors.html support packages]. These are automatically downloaded from [http://pmtksupport.googlecode.com] by [http://pmtk3.googlecode.com/svn/trunk/initPmtk3.m initPmtk3] if they are not already on your path. Once downloaded, the files are stored locally in the 'external' directory and added to your path, so the next time the local copy is used. Unlike the data sets, the support packages are downloaded all at once, not on demand.  However, you can check them all out at once if you prefer. In this case, you should edit the [http://pmtk3.googlecode.com/svn/trunk/config.txt config.txt] file to specify the location of the support directories. 
+  * PMTK3 relies on various [http://pmtksupport.googlecode.com/svn/trunk/docs/authors/packageAuthors.html support packages]. These are automatically downloaded from [http://pmtksupport.googlecode.com] by [http://pmtk3.googlecode.com/svn/trunk/initPmtk3.m initPmtk3] if they are not already on your path. Once downloaded, the files are stored locally in the 'pmtksupportCopy' directory and added to your path, so the next time the local copy is used. Unlike the data sets, the support packages are downloaded all at once, not on demand.  However, you can check them all out at once if you prefer. In this case, you should edit the [http://pmtk3.googlecode.com/svn/trunk/config-local.txt config-local.txt] file to specify the location of the support directory. 
 
 
 == Mex files ==
