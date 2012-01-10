@@ -1,16 +1,4 @@
 #summary Issues related to Matlab vs Octave in the context of PMTK3
 
-*Compatability of Octave and Matlab*
-
-[http://www.gnu.org/software/octave/ Octave] is a free version of Matlab.
-Not all of PMTK3 works in Octave. We are currently working on making most of it run. Below we list certain specific issues we have encountered in the context of PMTK3.
+About 50% of the PMTK3 code runs in Octave.
 See [http://code.google.com/p/yagtom/wiki/Octave this page] for a more general discussion of Matlab vs Octave.
-
-
-  * Octave does not yet support Matlab's Object Oriented System and has only limited support for the old style OO system, (e.g. no operator overloading support). This should  have no impact on PMTK3, which no longer uses objects. However, PMTK1 and PMTK2 will not work in Octave.
-
-  * Due to the previous point, graphViz4Matlab will not currently run in Octave. This is not required by PMTK3, but is useful for visualizing the output of graphical model sructure learning.
-
-  * The Lightspeed 'rows' function aliases built in Octave 'rows' function. It has been renamed to rowsLightspeed in [http://code.google.com/p/pmtksupport pmtksupport].
-
- * Some packages in [http://code.google.com/p/pmtksupport/ pmtkSupport] contain mex files without equivalent .m file backups. Octave now supports mex files, and users can manually compile such files using e.g. {{{ mex foo.c }}} inside of Octave. This creates a file with a .mex extension. Since Octave does not use different file extensions for different OS's it is difficult to include pre-compiled versions. See [http://www.gnu.org/software/octave/doc/interpreter/Dynamically-Linked-Functions.html#Dynamically-Linked-Functions this page] for more details.
