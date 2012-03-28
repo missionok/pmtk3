@@ -7,7 +7,9 @@
 
   * [http://code.google.com/p/yagtom Matlab tutorial]
 
-  * [http://code.google.com/p/pmtk3/wiki/Tutorial PMTK3 Tutorial]
+  * [http://code.google.com/p/pmtk3/wiki/Demos List of all PMTK3 demos]
+
+  * [http://code.google.com/p/pmtk3/wiki/Tutorial PMTK3 Tutorial (Unfinished)]
 
   * [http://code.google.com/p/pmtk3/wiki/dirStructure PMTK3 Directory structure]
 
