@@ -38,4 +38,4 @@ _a collection of demos not appearing in the book_
 
 
 
- * [http://pmtk3.googlecode.com/svn/trunk/docs/demoOutput/otherDemos/otherDemos/index.html  OtherDemos]
+ * [http://pmtk3.googlecode.com/svn/trunk/docs/demoOutput/index.html otherDemos/otherDemos] * [ OtherDemos/index.html 
