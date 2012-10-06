@@ -3,7 +3,7 @@
 
   * [http://code.google.com/p/pmtk3/wiki/installation Download and Installation instructions]
 
-  * [http://groups.google.com/group/pmtk?hl=en Join the PMTK email list]
+  * [http://groups.google.com/group/pmtk The PMTK google groups email list].  If you do not have a Google account (or equivalently, a gmail.com email address), you can send email to pmtk+subscribe@googlegroups.com from any email address, and participate in the group via email (but not via the web interface).
 
   * [http://code.google.com/p/yagtom Matlab tutorial]
 
