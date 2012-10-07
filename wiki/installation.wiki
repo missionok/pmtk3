@@ -18,8 +18,8 @@ downloading GGM-GWishart............success
 }}}
 If this fails for some reason, you may need to manually create the following directories
 {{{
-C:\pmtk3\pmtkSupportCopy
-C:\pmtk3\pmtkDataCopy
+C:\pmtk3\pmtksupportCopy
+C:\pmtk3\pmtkdataCopy
 }}}
 Then try re-running initPmtk3 again (from within matlab).
 
